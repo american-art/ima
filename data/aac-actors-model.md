@@ -38,6 +38,11 @@ Literal Type: ``
 <br/>Language: ``
 <br/>isUri: `true`
 
+#### Literal Node: `http://vocab.getty.edu/ulan`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
 
 ## PyTransforms
 #### _fullnamelabel_
@@ -187,6 +192,15 @@ From column: _data / dates / DeathPlaceURI_
 return "nationalityobject/"+getValue('uri')
 ```
 
+#### _UlanURI_
+From column: _data / ulan_id_
+``` python
+if getValue("ulan_id"):
+    return "http://vocab.getty.edu/ulan/"+getValue("ulan_id")
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -212,6 +226,7 @@ return "nationalityobject/"+getValue('uri')
 | _NameSuffixTypeClassURI_ | `uri` | `crm:E55_Type4`|
 | _NameURI_ | `uri` | `crm:E82_Actor_Appellation2`|
 | _NationalityClassURI_ | `uri` | `crm:E74_Group1`|
+| _UlanURI_ | `uri` | `skos:Concept1`|
 | _birth_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
 | _birth_ | `rdfs:label` | `crm:E53_Place1`|
 | _birthdatelabel_ | `rdfs:label` | `crm:E52_Time-Span1`|
@@ -238,6 +253,7 @@ return "nationalityobject/"+getValue('uri')
 | `crm:E39_Actor1` | `crm:P107i_is_current_or_former_member_of` | `crm:E74_Group1`|
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation1`|
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation2`|
+| `crm:E39_Actor1` | `skos:exactMatch` | `skos:Concept1`|
 | `crm:E55_Type1` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404651`|
 | `crm:E55_Type2` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404654`|
 | `crm:E55_Type3` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404652`|
@@ -258,3 +274,4 @@ return "nationalityobject/"+getValue('uri')
 | `crm:E82_Actor_Appellation4` | `crm:P2_has_type` | `crm:E55_Type2`|
 | `crm:E82_Actor_Appellation5` | `crm:P2_has_type` | `crm:E55_Type3`|
 | `crm:E82_Actor_Appellation6` | `crm:P2_has_type` | `crm:E55_Type4`|
+| `skos:Concept1` | `skos:inScheme` | `xsd:http://vocab.getty.edu/ulan`|
