@@ -69,73 +69,73 @@ return "id/"+getValue('firstid')
 #### _NameURI_
 From column: _data / uri_
 ``` python
-return "nameobject/"+getValue('uri')
+return getValue('uri')+"/name"
 ```
 
 #### _GivenNameClassURI_
 From column: _data / NameURI_
 ``` python
-return "nameobject/givenname/"+getValue('uri')
+return getValue('uri')+"/name/givenname"
 ```
 
 #### _GivenNameTypeClass_
 From column: _data / GivenNameClassURI_
 ``` python
-return "nameobject/givenname/givennametype/"+getValue('uri')
+return getValue('uri')+"/name/givenname/type"
 ```
 
 #### _MiddleNameClassURI_
 From column: _data / GivenNameClassURI_
 ``` python
-return "nameobject/middlename/"+getValue('uri')
+return getValue('uri')+"/name/middlename"
 ```
 
 #### _MiddleNameTypeClassURI_
 From column: _data / MiddleNameClassURI_
 ``` python
-return "nameobject/middlename/middlenametype/"+getValue('uri')
+return getValue('uri')+"/name/middlename/type"
 ```
 
 #### _FamilyNameClassURI_
 From column: _data / GivenNameClassURI_
 ``` python
-return "nameobject/familyname/"+getValue('uri')
+return getValue('uri')+"/name/familyname"
 ```
 
 #### _FamilyNameTypeClassURI_
 From column: _data / FamilyNameClassURI_
 ``` python
-return "nameobject/familyname/familynametype/"+getValue('uri')
+return getValue('uri')+"/name/familyname/type"
 ```
 
 #### _NameSuffixClassURI_
 From column: _data / MiddleNameClassURI_
 ``` python
-return "nameobject/namesuffix/"+getValue('uri')
+return getValue('uri')+"/name/suffix"
 ```
 
 #### _NameSuffixTypeClassURI_
 From column: _data / NameSuffixClassURI_
 ``` python
-return "nameobject/namesuffix/namesuffixtype/"+getValue('uri')
+return getValue('uri')+"/name/suffix/type"
 ```
 
 #### _ActorClassURI_
 From column: _data / NameURI_
 ``` python
-return "nameobject/actor/"+getValue('uri')
+return getValue('uri')+"/name/actor"
 ```
 
 #### _GenderClassURI_
 From column: _data / NameSuffixClassURI_
 ``` python
-return "gender/"+getValue('uri')
+return getValue('uri')+"/gender"
 ```
 
 #### _GenderTypeClassURI_
 From column: _data / GenderClassURI_
 ``` python
-return "gender/gendertype/"+getValue('uri')
+return getValue('uri')+"/gender/type"
 ```
 
 #### _birthdatelabel_
@@ -153,43 +153,43 @@ return getValue("death")
 #### _BirthURI_
 From column: _data / dates / birth_
 ``` python
-return "birthobject/"+getValue('uri')
+return getValue('uri')+"/birth"
 ```
 
 #### _BirthDateURI_
 From column: _data / dates / BirthURI_
 ``` python
-return "birthobject/birthdate/"+getValue('uri')
+return getValue('uri')+"/birth/date"
 ```
 
 #### _BirthPlaceURI_
 From column: _data / dates / BirthDateURI_
 ``` python
-return "birthobject/birthplace/"+getValue('uri')
+return getValue('uri')+"/birth/place"
 ```
 
 #### _DeathURI_
 From column: _data / dates / BirthURI_
 ``` python
-return "deathobject/"+getValue('uri')
+return getValue('uri')+"/death"
 ```
 
 #### _DeathDateURI_
 From column: _data / dates / BirthDateURI_
 ``` python
-return "deathobject/deathdate/"+getValue('uri')
+return getValue('uri')+"/death/date"
 ```
 
 #### _DeathPlaceURI_
 From column: _data / dates / BirthPlaceURI_
 ``` python
-return "deathobject/deathplace/"+getValue('uri')
+return getValue('uri')+"/death/place"
 ```
 
 #### _NationalityClassURI_
 From column: _data / dates / DeathPlaceURI_
 ``` python
-return "nationalityobject/"+getValue('uri')
+return getValue('uri')+"/nationality"
 ```
 
 #### _UlanURI_
