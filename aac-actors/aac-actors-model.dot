@@ -25,41 +25,41 @@ n19[style="filled",color="white",fillcolor="lightgray",label="E55_Type1"];
 n20[style="filled",color="white",fillcolor="lightgray",label="E55_Type2"];
 n21[style="filled",color="white",fillcolor="lightgray",label="E55_Type3"];
 n22[style="filled",color="white",fillcolor="lightgray",label="E55_Type4"];
-n23[shape="plaintext",style="filled",fillcolor="gold",label="death"];
-n24[shape="plaintext",style="filled",fillcolor="gold",label="NameSuffixClassURI"];
-n25[shape="plaintext",style="filled",fillcolor="gold",label="name_last"];
-n26[shape="plaintext",style="filled",fillcolor="gold",label="name_suffix"];
-n27[shape="plaintext",style="filled",fillcolor="gold",label="NameSuffixTypeClassURI"];
-n28[shape="plaintext",style="filled",fillcolor="gold",label="birth"];
-n29[shape="plaintext",style="filled",fillcolor="gold",label="BirthPlaceURI"];
-n30[shape="plaintext",style="filled",fillcolor="gold",label="deathdatelabel"];
-n31[shape="plaintext",style="filled",fillcolor="gold",label="MiddleNameClassURI"];
-n32[shape="plaintext",style="filled",fillcolor="gold",label="name_first"];
-n33[shape="plaintext",style="filled",fillcolor="gold",label="birthdatelabel"];
-n34[shape="plaintext",style="filled",fillcolor="gold",label="BirthDateURI"];
-n35[shape="plaintext",style="filled",fillcolor="gold",label="name_middle"];
-n36[shape="plaintext",style="filled",fillcolor="gold",label="GivenNameTypeClass"];
-n37[shape="plaintext",style="filled",fillcolor="gold",label="birth"];
+n23[shape="plaintext",style="filled",fillcolor="gold",label="MiddleNameClassURI"];
+n24[shape="plaintext",style="filled",fillcolor="gold",label="DeathURI"];
+n25[shape="plaintext",style="filled",fillcolor="gold",label="NationalityClassURI"];
+n26[shape="plaintext",style="filled",fillcolor="gold",label="sex"];
+n27[shape="plaintext",style="filled",fillcolor="gold",label="nationality"];
+n28[shape="plaintext",style="filled",fillcolor="gold",label="GivenNameTypeClass"];
+n29[shape="plaintext",style="filled",fillcolor="gold",label="birth"];
+n30[shape="plaintext",style="filled",fillcolor="gold",label="name_full"];
+n31[shape="plaintext",style="filled",fillcolor="gold",label="name_first"];
+n32[shape="plaintext",style="filled",fillcolor="gold",label="UlanURI"];
+n33[shape="plaintext",style="filled",fillcolor="gold",label="GenderTypeClassURI"];
+n34[shape="plaintext",style="filled",fillcolor="gold",label="NameSuffixClassURI"];
+n35[shape="plaintext",style="filled",fillcolor="gold",label="GenderClassURI"];
+n36[shape="plaintext",style="filled",fillcolor="gold",label="MiddleNameTypeClassURI"];
+n37[shape="plaintext",style="filled",fillcolor="gold",label="BirthURI"];
 n38[shape="plaintext",style="filled",fillcolor="gold",label="death"];
-n39[shape="plaintext",style="filled",fillcolor="gold",label="MiddleNameTypeClassURI"];
-n40[shape="plaintext",style="filled",fillcolor="gold",label="fullnamelabel"];
-n41[shape="plaintext",style="filled",fillcolor="gold",label="GenderClassURI"];
-n42[shape="plaintext",style="filled",fillcolor="gold",label="BirthURI"];
-n43[shape="plaintext",style="filled",fillcolor="gold",label="name_full"];
-n44[shape="plaintext",style="filled",fillcolor="gold",label="GenderTypeClassURI"];
-n45[shape="plaintext",style="filled",fillcolor="gold",label="sex"];
-n46[shape="plaintext",style="filled",fillcolor="gold",label="nationality"];
-n47[shape="plaintext",style="filled",fillcolor="gold",label="ActorClassURI"];
-n48[shape="plaintext",style="filled",fillcolor="gold",label="DeathURI"];
-n49[shape="plaintext",style="filled",fillcolor="gold",label="DeathDateURI"];
-n50[shape="plaintext",style="filled",fillcolor="gold",label="uri"];
-n51[shape="plaintext",style="filled",fillcolor="gold",label="UlanURI"];
-n52[shape="plaintext",style="filled",fillcolor="gold",label="GivenNameClassURI"];
-n53[shape="plaintext",style="filled",fillcolor="gold",label="NationalityClassURI"];
-n54[shape="plaintext",style="filled",fillcolor="gold",label="NameURI"];
-n55[shape="plaintext",style="filled",fillcolor="gold",label="FamilyNameClassURI"];
-n56[shape="plaintext",style="filled",fillcolor="gold",label="DeathPlaceURI"];
-n57[shape="plaintext",style="filled",fillcolor="gold",label="FamilyNameTypeClassURI"];
+n39[shape="plaintext",style="filled",fillcolor="gold",label="name_middle"];
+n40[shape="plaintext",style="filled",fillcolor="gold",label="FamilyNameClassURI"];
+n41[shape="plaintext",style="filled",fillcolor="gold",label="FamilyNameTypeClassURI"];
+n42[shape="plaintext",style="filled",fillcolor="gold",label="NameSuffixTypeClassURI"];
+n43[shape="plaintext",style="filled",fillcolor="gold",label="birth"];
+n44[shape="plaintext",style="filled",fillcolor="gold",label="ActorClassURI"];
+n45[shape="plaintext",style="filled",fillcolor="gold",label="name_last"];
+n46[shape="plaintext",style="filled",fillcolor="gold",label="death"];
+n47[shape="plaintext",style="filled",fillcolor="gold",label="name_suffix"];
+n48[shape="plaintext",style="filled",fillcolor="gold",label="fullnamelabel"];
+n49[shape="plaintext",style="filled",fillcolor="gold",label="NameURI"];
+n50[shape="plaintext",style="filled",fillcolor="gold",label="DeathDateURI"];
+n51[shape="plaintext",style="filled",fillcolor="gold",label="BirthPlaceURI"];
+n52[shape="plaintext",style="filled",fillcolor="gold",label="deathdatelabel"];
+n53[shape="plaintext",style="filled",fillcolor="gold",label="BirthDateURI"];
+n54[shape="plaintext",style="filled",fillcolor="gold",label="DeathPlaceURI"];
+n55[shape="plaintext",style="filled",fillcolor="gold",label="GivenNameClassURI"];
+n56[shape="plaintext",style="filled",fillcolor="gold",label="birthdatelabel"];
+n57[shape="plaintext",style="filled",fillcolor="gold",label="uri"];
 n58[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
 n59[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404662"];
 n60[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300379842"];
@@ -89,41 +89,41 @@ n15 -> n19[color="brown",fontcolor="black",label="P2_has_type"]
 n16 -> n20[color="brown",fontcolor="black",label="P2_has_type"]
 n17 -> n21[color="brown",fontcolor="black",label="P2_has_type"]
 n18 -> n22[color="brown",fontcolor="black",label="P2_has_type"]
-n13 -> n23[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
-n18 -> n24[color="brown",fontcolor="black",label="classLink"]
-n17 -> n25[color="brown",fontcolor="black",label="value"]
-n18 -> n26[color="brown",fontcolor="black",label="value"]
-n22 -> n27[color="brown",fontcolor="black",label="classLink"]
-n11 -> n28[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
-n12 -> n29[color="brown",fontcolor="black",label="classLink"]
-n13 -> n30[color="brown",fontcolor="black",label="label"]
-n16 -> n31[color="brown",fontcolor="black",label="classLink"]
-n15 -> n32[color="brown",fontcolor="black",label="value"]
-n11 -> n33[color="brown",fontcolor="black",label="label"]
-n11 -> n34[color="brown",fontcolor="black",label="classLink"]
-n16 -> n35[color="brown",fontcolor="black",label="value"]
-n19 -> n36[color="brown",fontcolor="black",label="classLink"]
-n12 -> n37[color="brown",fontcolor="black",label="label"]
+n16 -> n23[color="brown",fontcolor="black",label="classLink"]
+n5 -> n24[color="brown",fontcolor="black",label="classLink"]
+n6 -> n25[color="brown",fontcolor="black",label="classLink"]
+n3 -> n26[color="brown",fontcolor="black",label="label"]
+n6 -> n27[color="brown",fontcolor="black",label="label"]
+n19 -> n28[color="brown",fontcolor="black",label="classLink"]
+n12 -> n29[color="brown",fontcolor="black",label="label"]
+n7 -> n30[color="brown",fontcolor="black",label="value"]
+n15 -> n31[color="brown",fontcolor="black",label="value"]
+n9 -> n32[color="brown",fontcolor="black",label="classLink"]
+n10 -> n33[color="brown",fontcolor="black",label="classLink"]
+n18 -> n34[color="brown",fontcolor="black",label="classLink"]
+n3 -> n35[color="brown",fontcolor="black",label="classLink"]
+n20 -> n36[color="brown",fontcolor="black",label="classLink"]
+n4 -> n37[color="brown",fontcolor="black",label="classLink"]
 n14 -> n38[color="brown",fontcolor="black",label="label"]
-n20 -> n39[color="brown",fontcolor="black",label="classLink"]
-n2 -> n40[color="brown",fontcolor="black",label="label"]
-n3 -> n41[color="brown",fontcolor="black",label="classLink"]
-n4 -> n42[color="brown",fontcolor="black",label="classLink"]
-n7 -> n43[color="brown",fontcolor="black",label="value"]
-n10 -> n44[color="brown",fontcolor="black",label="classLink"]
-n3 -> n45[color="brown",fontcolor="black",label="label"]
-n6 -> n46[color="brown",fontcolor="black",label="label"]
-n7 -> n47[color="brown",fontcolor="black",label="classLink"]
-n5 -> n48[color="brown",fontcolor="black",label="classLink"]
-n13 -> n49[color="brown",fontcolor="black",label="classLink"]
-n2 -> n50[color="brown",fontcolor="black",label="classLink"]
-n9 -> n51[color="brown",fontcolor="black",label="classLink"]
-n15 -> n52[color="brown",fontcolor="black",label="classLink"]
-n6 -> n53[color="brown",fontcolor="black",label="classLink"]
-n8 -> n54[color="brown",fontcolor="black",label="classLink"]
-n17 -> n55[color="brown",fontcolor="black",label="classLink"]
-n14 -> n56[color="brown",fontcolor="black",label="classLink"]
-n21 -> n57[color="brown",fontcolor="black",label="classLink"]
+n16 -> n39[color="brown",fontcolor="black",label="value"]
+n17 -> n40[color="brown",fontcolor="black",label="classLink"]
+n21 -> n41[color="brown",fontcolor="black",label="classLink"]
+n22 -> n42[color="brown",fontcolor="black",label="classLink"]
+n11 -> n43[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
+n7 -> n44[color="brown",fontcolor="black",label="classLink"]
+n17 -> n45[color="brown",fontcolor="black",label="value"]
+n13 -> n46[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
+n18 -> n47[color="brown",fontcolor="black",label="value"]
+n2 -> n48[color="brown",fontcolor="black",label="label"]
+n8 -> n49[color="brown",fontcolor="black",label="classLink"]
+n13 -> n50[color="brown",fontcolor="black",label="classLink"]
+n12 -> n51[color="brown",fontcolor="black",label="classLink"]
+n13 -> n52[color="brown",fontcolor="black",label="label"]
+n11 -> n53[color="brown",fontcolor="black",label="classLink"]
+n14 -> n54[color="brown",fontcolor="black",label="classLink"]
+n15 -> n55[color="brown",fontcolor="black",label="classLink"]
+n11 -> n56[color="brown",fontcolor="black",label="label"]
+n2 -> n57[color="brown",fontcolor="black",label="classLink"]
 n7 -> n58[color="brown",fontcolor="black",label="P2_has_type"]
 n22 -> n59[color="brown",fontcolor="black",label="broadMatch"]
 n6 -> n60[color="brown",fontcolor="black",label="P2_has_type"]
