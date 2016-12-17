@@ -4,45 +4,92 @@ remincross="true"
 label="aac-objects_folded.json"
 subgraph cluster {
 label="model"
-n2[style="filled",color="white",fillcolor="lightgray",label="E53_Place1"];
-n3[shape="plaintext",style="filled",fillcolor="gold",label="CreationLocationClassURI"];
-n4[style="filled",color="white",fillcolor="lightgray",label="Document1"];
-n5[shape="plaintext",style="filled",fillcolor="gold",label="objectURL"];
-n6[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
-n7[style="filled",color="white",fillcolor="lightgray",label="E35_Title1"];
-n8[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
-n9[shape="plaintext",style="filled",fillcolor="gold",label="TitleURI"];
-n10[shape="plaintext",style="filled",fillcolor="gold",label="accession_number"];
-n11[style="filled",color="white",fillcolor="lightgray",label="E12_Production1"];
-n12[shape="plaintext",style="filled",fillcolor="gold",label="ProductionURI"];
-n13[shape="plaintext",style="filled",fillcolor="gold",label="link"];
-n14[shape="plaintext",style="filled",fillcolor="gold",label="creation_place"];
-n15[shape="plaintext",style="filled",fillcolor="gold",label="ObjectID"];
-n16[style="filled",color="white",fillcolor="lightgray",label="E38_Image1"];
-n17[shape="plaintext",style="filled",fillcolor="gold",label="FirstImageURL"];
-n18[shape="plaintext",style="filled",fillcolor="gold",label="titleLabel"];
-n19[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300312355"];
-n20[shape="plaintext",style="filled",fillcolor="gold",label="title"];
-n21[shape="plaintext",style="filled",fillcolor="gold",label="accessionLabel"];
-n22[shape="plaintext",style="filled",fillcolor="gold",label="accessionNumberURI"];
+n2[style="filled",color="white",fillcolor="lightgray",label="E57_Material1"];
+n3[shape="plaintext",style="filled",fillcolor="gold",label="MaterialURI"];
+n4[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
+n5[style="filled",color="white",fillcolor="lightgray",label="E30_Right1"];
+n6[style="filled",color="white",fillcolor="lightgray",label="E55_Type1"];
+n7[style="filled",color="white",fillcolor="lightgray",label="E12_Production2"];
+n8[style="filled",color="white",fillcolor="lightgray",label="E53_Place1"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="creation_place"];
+n10[style="filled",color="white",fillcolor="lightgray",label="E35_Title1"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="title"];
+n12[style="filled",color="white",fillcolor="lightgray",label="E12_Production1"];
+n13[shape="plaintext",style="filled",fillcolor="gold",label="ProductionURI"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n15[style="filled",color="white",fillcolor="lightgray",label="E55_Type2"];
+n16[shape="plaintext",style="filled",fillcolor="gold",label="technique"];
+n17[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
+n18[style="filled",color="white",fillcolor="lightgray",label="Document1"];
+n19[shape="plaintext",style="filled",fillcolor="gold",label="objectURL"];
+n20[shape="plaintext",style="filled",fillcolor="gold",label="TechniqueLabelURI"];
+n21[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n22[shape="plaintext",style="filled",fillcolor="gold",label="TechniqueURI"];
+n23[style="filled",color="white",fillcolor="lightgray",label="E17_Type_Assignment1"];
+n24[shape="plaintext",style="filled",fillcolor="gold",label="link"];
+n25[style="filled",color="white",fillcolor="lightgray",label="E38_Image1"];
+n26[shape="plaintext",style="filled",fillcolor="gold",label="FirstImageURL"];
+n27[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object1"];
+n28[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
+n29[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300080091"];
+n30[shape="plaintext",style="filled",fillcolor="gold",label="DescriptionValue"];
+n31[shape="plaintext",style="filled",fillcolor="gold",label="CreationLocationClassURI"];
+n32[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300179869"];
+n33[shape="plaintext",style="filled",fillcolor="gold",label="description"];
+n34[shape="plaintext",style="filled",fillcolor="gold",label="ObjectID"];
+n35[shape="plaintext",style="filled",fillcolor="gold",label="accession_number"];
+n36[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n37[shape="plaintext",style="filled",fillcolor="gold",label="TitleURI"];
+n38[shape="plaintext",style="filled",fillcolor="gold",label="RightsURI"];
+n39[shape="plaintext",style="filled",fillcolor="gold",label="ClassificationLabelURI"];
+n40[shape="plaintext",style="filled",fillcolor="gold",label="DescriptionURI"];
+n41[shape="plaintext",style="filled",fillcolor="gold",label="titleLabel"];
+n42[shape="plaintext",style="filled",fillcolor="gold",label="AccessionNumberURI"];
+n43[shape="plaintext",style="filled",fillcolor="gold",label="ClassificationURI"];
+n44[shape="plaintext",style="filled",fillcolor="gold",label="accessionLabel"];
+n45[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300312355"];
 }
 n2 -> n3[color="brown",fontcolor="black",label="classLink"]
-n4 -> n5[color="brown",fontcolor="black",label="label"]
-n6 -> n7[color="brown",fontcolor="black",label="P102_has_title"]
-n6 -> n8[color="brown",fontcolor="black",label="P1_is_identified_by"]
-n7 -> n9[color="brown",fontcolor="black",label="classLink"]
-n8 -> n10[color="brown",fontcolor="black",label="value"]
-n11 -> n12[color="brown",fontcolor="black",label="classLink"]
-n4 -> n13[color="brown",fontcolor="black",label="classLink"]
-n2 -> n14[color="brown",fontcolor="black",label="label"]
-n6 -> n15[color="brown",fontcolor="black",label="classLink"]
-n16 -> n17[color="brown",fontcolor="black",label="classLink"]
-n6 -> n18[color="brown",fontcolor="black",label="label"]
-n6 -> n16[color="brown",fontcolor="black",label="P138i_has_representation"]
-n6 -> n4[color="brown",fontcolor="black",label="homepage"]
-n8 -> n19[color="brown",fontcolor="black",label="P2_has_type"]
-n7 -> n20[color="brown",fontcolor="black",label="value"]
-n8 -> n21[color="brown",fontcolor="black",label="label"]
-n8 -> n22[color="brown",fontcolor="black",label="classLink"]
-n11 -> n2[color="brown",fontcolor="black",label="P7_took_place_at"]
+n4 -> n5[color="brown",fontcolor="black",label="P104_is_subject_to"]
+n4 -> n6[color="brown",fontcolor="black",label="P2_has_type"]
+n4 -> n7[color="brown",fontcolor="black",label="P108i_was_produced_by"]
+n8 -> n9[color="brown",fontcolor="black",label="label"]
+n10 -> n11[color="brown",fontcolor="black",label="value"]
+n12 -> n13[color="brown",fontcolor="black",label="classLink"]
+n6 -> n14[color="brown",fontcolor="black",label="label"]
+n15 -> n16[color="brown",fontcolor="black",label="label"]
+n4 -> n17[color="brown",fontcolor="black",label="P1_is_identified_by"]
+n18 -> n19[color="brown",fontcolor="black",label="label"]
+n15 -> n20[color="brown",fontcolor="black",label="classLink"]
+n2 -> n21[color="brown",fontcolor="black",label="prefLabel"]
+n7 -> n22[color="brown",fontcolor="black",label="classLink"]
+n23 -> n6[color="brown",fontcolor="black",label="P42_assigned"]
+n4 -> n18[color="brown",fontcolor="black",label="homepage"]
+n7 -> n15[color="brown",fontcolor="black",label="P32_used_general_technique"]
+n18 -> n24[color="brown",fontcolor="black",label="classLink"]
+n25 -> n26[color="brown",fontcolor="black",label="classLink"]
+n4 -> n27[color="brown",fontcolor="black",label="P129i_is_subject_of"]
+n27 -> n28[color="brown",fontcolor="black",label="P2_has_type"]
+n4 -> n10[color="brown",fontcolor="black",label="P102_has_title"]
+n27 -> n29[color="brown",fontcolor="black",label="P2_has_type"]
+n27 -> n30[color="brown",fontcolor="black",label="value"]
+n8 -> n31[color="brown",fontcolor="black",label="classLink"]
+n6 -> n32[color="brown",fontcolor="black",label="P21_had_general_purpose"]
+n4 -> n33[color="brown",fontcolor="black",label="description"]
+n4 -> n34[color="brown",fontcolor="black",label="classLink"]
+n17 -> n35[color="brown",fontcolor="black",label="value"]
+n5 -> n36[color="brown",fontcolor="black",label="P3_has_note"]
+n4 -> n2[color="brown",fontcolor="black",label="P45_consists_of"]
+n10 -> n37[color="brown",fontcolor="black",label="classLink"]
+n5 -> n38[color="brown",fontcolor="black",label="classLink"]
+n6 -> n39[color="brown",fontcolor="black",label="classLink"]
+n4 -> n23[color="brown",fontcolor="black",label="P41i_was_classified_by"]
+n27 -> n40[color="brown",fontcolor="black",label="classLink"]
+n4 -> n41[color="brown",fontcolor="black",label="label"]
+n17 -> n42[color="brown",fontcolor="black",label="classLink"]
+n4 -> n25[color="brown",fontcolor="black",label="P138i_has_representation"]
+n23 -> n43[color="brown",fontcolor="black",label="classLink"]
+n17 -> n44[color="brown",fontcolor="black",label="label"]
+n17 -> n45[color="brown",fontcolor="black",label="P2_has_type"]
+n12 -> n8[color="brown",fontcolor="black",label="P7_took_place_at"]
 }
