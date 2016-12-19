@@ -63,7 +63,7 @@ else:
 #### _uri_
 From column: _data / firstid_
 ``` python
-return "id/"+getValue('firstid')
+return "actor/id/"+getValue('firstid')
 ```
 
 #### _NameURI_
