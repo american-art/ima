@@ -201,6 +201,18 @@ else:
     return ""
 ```
 
+#### _BirthLatest_
+From column: _data / dates / birth_
+``` python
+return getValue("birth")
+```
+
+#### _DeathLabel_
+From column: _data / dates / death_
+``` python
+return getValue("death")
+```
+
 
 ## Selections
 
@@ -209,9 +221,11 @@ else:
 |  ----- | -------- | ----- |
 | _ActorClassURI_ | `uri` | `crm:E82_Actor_Appellation1`|
 | _BirthDateURI_ | `uri` | `crm:E52_Time-Span1`|
+| _BirthLatest_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _BirthPlaceURI_ | `uri` | `crm:E53_Place1`|
 | _BirthURI_ | `uri` | `crm:E63_Beginning_of_Existence1`|
 | _DeathDateURI_ | `uri` | `crm:E52_Time-Span2`|
+| _DeathLabel_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span2`|
 | _DeathPlaceURI_ | `uri` | `crm:E53_Place2`|
 | _DeathURI_ | `uri` | `crm:E64_End_of_Existence1`|
 | _FamilyNameClassURI_ | `uri` | `crm:E82_Actor_Appellation5`|
