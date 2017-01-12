@@ -219,7 +219,6 @@ return getValue("death")
 ## Semantic Types
 | Column | Property | Class |
 |  ----- | -------- | ----- |
-| _ActorClassURI_ | `uri` | `crm:E82_Actor_Appellation1`|
 | _BirthDateURI_ | `uri` | `crm:E52_Time-Span1`|
 | _BirthLatest_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _BirthPlaceURI_ | `uri` | `crm:E53_Place1`|
@@ -249,7 +248,7 @@ return getValue("death")
 | _deathdatelabel_ | `rdfs:label` | `crm:E52_Time-Span2`|
 | _fullnamelabel_ | `rdfs:label` | `crm:E39_Actor1`|
 | _name_first_ | `rdf:value` | `crm:E82_Actor_Appellation3`|
-| _name_full_ | `rdf:value` | `crm:E82_Actor_Appellation1`|
+| _name_full_ | `rdf:value` | `crm:E82_Actor_Appellation2`|
 | _name_last_ | `rdf:value` | `crm:E82_Actor_Appellation5`|
 | _name_middle_ | `rdf:value` | `crm:E82_Actor_Appellation4`|
 | _name_suffix_ | `rdf:value` | `crm:E82_Actor_Appellation6`|
@@ -265,7 +264,6 @@ return getValue("death")
 | `crm:E39_Actor1` | `crm:P92i_was_brought_into_existence_by` | `crm:E63_Beginning_of_Existence1`|
 | `crm:E39_Actor1` | `crm:P93i_was_taken_out_of_existence_by` | `crm:E64_End_of_Existence1`|
 | `crm:E39_Actor1` | `crm:P107i_is_current_or_former_member_of` | `crm:E74_Group1`|
-| `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation1`|
 | `crm:E39_Actor1` | `crm:P131_is_identified_by` | `crm:E82_Actor_Appellation2`|
 | `crm:E39_Actor1` | `skos:exactMatch` | `skos:Concept1`|
 | `crm:E55_Type1` | `skos:broadMatch` | `xsd:http://vocab.getty.edu/aat/300404651`|
@@ -279,11 +277,11 @@ return getValue("death")
 | `crm:E64_End_of_Existence1` | `crm:P4_has_time-span` | `crm:E52_Time-Span2`|
 | `crm:E64_End_of_Existence1` | `crm:P7_took_place_at` | `crm:E53_Place2`|
 | `crm:E74_Group1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300379842`|
-| `crm:E82_Actor_Appellation1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
 | `crm:E82_Actor_Appellation2` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation3`|
 | `crm:E82_Actor_Appellation2` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation4`|
 | `crm:E82_Actor_Appellation2` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation5`|
 | `crm:E82_Actor_Appellation2` | `crm:P106_is_composed_of` | `crm:E82_Actor_Appellation6`|
+| `crm:E82_Actor_Appellation2` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
 | `crm:E82_Actor_Appellation3` | `crm:P2_has_type` | `crm:E55_Type1`|
 | `crm:E82_Actor_Appellation4` | `crm:P2_has_type` | `crm:E55_Type2`|
 | `crm:E82_Actor_Appellation5` | `crm:P2_has_type` | `crm:E55_Type3`|
