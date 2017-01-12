@@ -120,12 +120,6 @@ From column: _data / NameSuffixClassURI_
 return getValue('uri')+"/name/suffix/type"
 ```
 
-#### _ActorClassURI_
-From column: _data / NameURI_
-``` python
-return getValue('uri')+"/name/actor"
-```
-
 #### _GenderClassURI_
 From column: _data / NameSuffixClassURI_
 ``` python
