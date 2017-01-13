@@ -162,7 +162,7 @@ return getValue("ObjectID")+"/technique"
 From column: _data / technique_
 ``` python
 if getValue('technique') != "":
-    return getValue('ObjectID')+'/technique/'+getValue("technique")
+    return UM.uri_from_fields(getValue('ObjectID')+'/technique/',getValue("technique"))
 else:
     return ""
 ```
