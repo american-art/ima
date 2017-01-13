@@ -141,7 +141,7 @@ return getValue("ObjectID")+"/type"
 From column: _data / object_types / values_
 ``` python
 if getValue('values') != "":
-    return getValue('ObjectID')+'/type/'+getValue("values")
+    return UM.uri_from_fields(getValue('ObjectID')+'/type/', getValue("values"))
 else:
     return ""
 ```
