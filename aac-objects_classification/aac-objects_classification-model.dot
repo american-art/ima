@@ -1,0 +1,24 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="aac-objects_folded_jsonlines.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="E17_Type_Assignment1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="E55_Type1"];
+n4[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="ClassificationURI"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="TypeURI"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n9[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300179869"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="P42_assigned"]
+n4 -> n2[color="brown",fontcolor="black",label="P41i_was_classified_by"]
+n4 -> n5[color="brown",fontcolor="black",label="classLink"]
+n2 -> n6[color="brown",fontcolor="black",label="classLink"]
+n3 -> n7[color="brown",fontcolor="black",label="classLink"]
+n3 -> n8[color="brown",fontcolor="black",label="label"]
+n2 -> n9[color="brown",fontcolor="black",label="P21_had_general_purpose"]
+n4 -> n3[color="brown",fontcolor="black",label="P2_has_type"]
+}
