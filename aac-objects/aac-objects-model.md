@@ -18,11 +18,6 @@ Literal Type: ``
 <br/>Language: ``
 <br/>isUri: `true`
 
-#### Literal Node: `http://vocab.getty.edu/aat/300179869`
-Literal Type: ``
-<br/>Language: ``
-<br/>isUri: `true`
-
 #### Literal Node: `http://vocab.getty.edu/aat/300026687`
 Literal Type: ``
 <br/>Language: ``
@@ -34,6 +29,11 @@ Literal Type: ``
 <br/>isUri: `true`
 
 #### Literal Node: `http://vocab.getty.edu/aat/300266036`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
+#### Literal Node: `http://vocab.getty.edu/ulan/500300517`
 Literal Type: ``
 <br/>Language: ``
 <br/>isUri: `true`
@@ -287,6 +287,18 @@ From column: _data / dimensions / DimensionWidthURI_
 return getValue("ObjectID")+'/dimensiontext'
 ```
 
+#### _OwnerURI_
+From column: _data / ObjectID_
+``` python
+return "http://www.imamuseum.org/"
+```
+
+#### _OwnerLabel_
+From column: _data / OwnerURI_
+``` python
+return "Indianapolis Museum of Art"
+```
+
 
 ## Selections
 
@@ -315,6 +327,8 @@ return getValue("ObjectID")+'/dimensiontext'
 | _FirstImageURL_ | `uri` | `crm:E38_Image1`|
 | _MaterialURI_ | `uri` | `crm:E57_Material1`|
 | _ObjectID_ | `uri` | `crm:E22_Man-Made_Object1`|
+| _OwnerLabel_ | `rdfs:label` | `crm:E40_Legal_Body1`|
+| _OwnerURI_ | `uri` | `crm:E40_Legal_Body1`|
 | _PhyDepth_tab_ | `rdf:value` | `crm:E54_Dimension4`|
 | _PhyDiameter_tab_ | `rdf:value` | `crm:E54_Dimension3`|
 | _PhyDimensionNotes_tab_ | `rdf:value` | `crm:E33_Linguistic_Object3`|
@@ -362,6 +376,7 @@ return getValue("ObjectID")+'/dimensiontext'
 | `crm:E22_Man-Made_Object1` | `crm:P67i_is_referred_to_by` | `crm:E33_Linguistic_Object3`|
 | `crm:E22_Man-Made_Object1` | `crm:P102_has_title` | `crm:E35_Title1`|
 | `crm:E22_Man-Made_Object1` | `crm:P138i_has_representation` | `crm:E38_Image1`|
+| `crm:E22_Man-Made_Object1` | `crm:P52_has_current_owner` | `crm:E40_Legal_Body1`|
 | `crm:E22_Man-Made_Object1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension1`|
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension2`|
@@ -369,10 +384,11 @@ return getValue("ObjectID")+'/dimensiontext'
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension4`|
 | `crm:E22_Man-Made_Object1` | `crm:P45_consists_of` | `crm:E57_Material1`|
 | `crm:E22_Man-Made_Object1` | `foaf:homepage` | `foaf:Document1`|
-| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300080091`|
-| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
-| `crm:E33_Linguistic_Object2` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300026687`|
-| `crm:E33_Linguistic_Object3` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300266036`|
-| `crm:E35_Title1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300404670`|
-| `crm:E42_Identifier1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300312355`|
-| `crm:E74_Group1` | `crm:P2_has_type` | `xsd:http://vocab.getty.edu/aat/300263534`|
+| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300080091`|
+| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
+| `crm:E33_Linguistic_Object2` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300026687`|
+| `crm:E33_Linguistic_Object3` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300266036`|
+| `crm:E35_Title1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
+| `crm:E40_Legal_Body1` | `skos:exactMatch` | `http://vocab.getty.edu/ulan/500300517`|
+| `crm:E42_Identifier1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300312355`|
+| `crm:E74_Group1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300263534`|
