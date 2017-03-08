@@ -290,7 +290,7 @@ return getValue("ObjectID")+'/dimensiontext'
 #### _OwnerURI_
 From column: _data / ObjectID_
 ``` python
-return "http://www.imamuseum.org/"
+return "http://data.americanartcollaborative.org/ima"
 ```
 
 #### _OwnerLabel_
