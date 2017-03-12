@@ -182,7 +182,7 @@ return getValue('ObjectID')+'/collection'
 #### _DepartmentURI_
 From column: _data / CollectionURI_
 ``` python
-return getValue('ObjectID')+'/collection/department'
+return UM.uri_from_fields("thesauri/department/",getValue("department"))
 ```
 
 #### _InformationObjectURI_
@@ -299,6 +299,12 @@ From column: _data / OwnerURI_
 return "Indianapolis Museum of Art"
 ```
 
+#### _DeptURI_
+From column: _data / department / values_
+``` python
+return UM.uri_from_fields("thesauri/department/",getValue("values"))
+```
+
 
 ## Selections
 
@@ -312,7 +318,7 @@ return "Indianapolis Museum of Art"
 | _CreationLocationClassURI_ | `uri` | `crm:E53_Place1`|
 | _CreatorURI_ | `uri` | `crm:E39_Actor1`|
 | _CreditLineURI_ | `uri` | `crm:E33_Linguistic_Object2`|
-| _DepartmentURI_ | `uri` | `crm:E74_Group1`|
+| _DeptURI_ | `uri` | `crm:E74_Group1`|
 | _DescriptionURI_ | `uri` | `crm:E33_Linguistic_Object1`|
 | _DescriptionValue_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
 | _DimensionDepthURI_ | `uri` | `crm:E54_Dimension4`|
