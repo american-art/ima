@@ -305,6 +305,18 @@ From column: _data / department / values_
 return UM.uri_from_fields("thesauri/department/",getValue("values"))
 ```
 
+#### _PrefID_Label_
+From column: _data / id_
+``` python
+return getValue("id")
+```
+
+#### _PrefID_URI_
+From column: _data / PrefID_Label_
+``` python
+return getValue("ObjectID")+"/id"
+```
+
 
 ## Selections
 
@@ -340,6 +352,8 @@ return UM.uri_from_fields("thesauri/department/",getValue("values"))
 | _PhyDimensionNotes_tab_ | `rdf:value` | `crm:E33_Linguistic_Object3`|
 | _PhyHeight_tab_ | `rdf:value` | `crm:E54_Dimension2`|
 | _PhyWidth_tab_ | `rdf:value` | `crm:E54_Dimension1`|
+| _PrefID_Label_ | `rdfs:label` | `crm:E42_Identifier2`|
+| _PrefID_URI_ | `uri` | `crm:E42_Identifier2`|
 | _ProductionCreatorURI_ | `uri` | `crm:E12_Production4`|
 | _ProductionURI_ | `uri` | `crm:E12_Production1`|
 | _RightsURI_ | `uri` | `crm:E30_Right1`|
@@ -353,6 +367,7 @@ return UM.uri_from_fields("thesauri/department/",getValue("values"))
 | _date_earliest_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
 | _date_latest_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _description_ | `dc:description` | `crm:E22_Man-Made_Object1`|
+| _id_ | `rdf:value` | `crm:E42_Identifier2`|
 | _link_ | `uri` | `foaf:Document1`|
 | _objectURL_ | `rdfs:label` | `foaf:Document1`|
 | _technique_ | `rdfs:label` | `crm:E55_Type2`|
@@ -384,6 +399,7 @@ return UM.uri_from_fields("thesauri/department/",getValue("values"))
 | `crm:E22_Man-Made_Object1` | `crm:P138i_has_representation` | `crm:E38_Image1`|
 | `crm:E22_Man-Made_Object1` | `crm:P52_has_current_owner` | `crm:E40_Legal_Body1`|
 | `crm:E22_Man-Made_Object1` | `crm:P1_is_identified_by` | `crm:E42_Identifier1`|
+| `crm:E22_Man-Made_Object1` | `crm:P1_is_identified_by` | `crm:E42_Identifier2`|
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension1`|
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension2`|
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension3`|
@@ -397,4 +413,5 @@ return UM.uri_from_fields("thesauri/department/",getValue("values"))
 | `crm:E35_Title1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
 | `crm:E40_Legal_Body1` | `skos:exactMatch` | `http://vocab.getty.edu/ulan/500300517`|
 | `crm:E42_Identifier1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300312355`|
+| `crm:E42_Identifier2` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
 | `crm:E74_Group1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300263534`|
