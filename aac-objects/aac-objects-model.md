@@ -176,25 +176,25 @@ return getValue('ObjectID')+'/creditline'
 #### _CollectionURI_
 From column: _data / CreditLineURI_
 ``` python
-return getValue('ObjectID')+'/collection'
+
 ```
 
 #### _DepartmentURI_
 From column: _data / CollectionURI_
 ``` python
-return UM.uri_from_fields("thesauri/department/",getValue("department"))
+
 ```
 
 #### _InformationObjectURI_
 From column: _data / DepartmentURI_
 ``` python
-return getValue('ObjectID')+'/information'
+
 ```
 
 #### _ConceptURI_
 From column: _data / InformationObjectURI_
 ``` python
-return getValue('ObjectID')+'/information/concept'
+
 ```
 
 #### _CreationDateURI_
@@ -224,7 +224,10 @@ return getValue('ProductionURI')
 #### _DimensionDepthURI_
 From column: _data / dimensions / PhyType_tab_
 ``` python
-return UM.uri_from_fields(getValue("ObjectID")+'/depth/',getValue('PhyType_tab'))
+if getValue("PhyDepth_tab"):
+    return UM.uri_from_fields(getValue("ObjectID")+'/depth/',getValue('PhyType_tab'))
+else:
+    return ""
 ```
 
 #### _DimensionDiameterURI_
@@ -317,6 +320,15 @@ From column: _data / PrefID_Label_
 return getValue("ObjectID")+"/id"
 ```
 
+#### _PhysicalObjectURI_
+From column: _data / department / values_
+``` python
+if getValue("values"):
+    return UM.uri_from_fields("thesauri/collection/",getValue("values"))
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -324,7 +336,6 @@ return getValue("ObjectID")+"/id"
 | Column | Property | Class |
 |  ----- | -------- | ----- |
 | _AccessionNumberURI_ | `uri` | `crm:E42_Identifier1`|
-| _CollectionURI_ | `uri` | `crm:E19_Physical_Object1`|
 | _CreationDateTimeSpanURI_ | `uri` | `crm:E52_Time-Span1`|
 | _CreationDateURI_ | `uri` | `crm:E12_Production3`|
 | _CreationLocationClassURI_ | `uri` | `crm:E53_Place1`|
@@ -352,6 +363,7 @@ return getValue("ObjectID")+"/id"
 | _PhyDimensionNotes_tab_ | `rdf:value` | `crm:E33_Linguistic_Object3`|
 | _PhyHeight_tab_ | `rdf:value` | `crm:E54_Dimension2`|
 | _PhyWidth_tab_ | `rdf:value` | `crm:E54_Dimension1`|
+| _PhysicalObjectURI_ | `uri` | `crm:E19_Physical_Object1`|
 | _PrefID_Label_ | `rdfs:label` | `crm:E42_Identifier2`|
 | _PrefID_URI_ | `uri` | `crm:E42_Identifier2`|
 | _ProductionCreatorURI_ | `uri` | `crm:E12_Production4`|
