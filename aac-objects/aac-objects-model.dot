@@ -12,172 +12,187 @@ n6[style="filled",color="white",fillcolor="lightgray",label="E12_Production3"];
 n7[style="filled",color="white",fillcolor="lightgray",label="E52_Time-Span1"];
 n8[style="filled",color="white",fillcolor="lightgray",label="E12_Production4"];
 n9[style="filled",color="white",fillcolor="lightgray",label="E39_Actor1"];
-n10[style="filled",color="white",fillcolor="lightgray",label="E19_Physical_Object1"];
-n11[style="filled",color="white",fillcolor="lightgray",label="E74_Group1"];
-n12[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
-n13[style="filled",color="white",fillcolor="lightgray",label="E30_Right1"];
-n14[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object1"];
-n15[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object2"];
-n16[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object3"];
-n17[style="filled",color="white",fillcolor="lightgray",label="E35_Title1"];
-n18[style="filled",color="white",fillcolor="lightgray",label="E38_Image1"];
-n19[style="filled",color="white",fillcolor="lightgray",label="E40_Legal_Body1"];
-n20[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
-n21[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier2"];
-n22[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension1"];
-n23[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension2"];
-n24[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension3"];
-n25[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension4"];
-n26[style="filled",color="white",fillcolor="lightgray",label="E57_Material1"];
-n27[style="filled",color="white",fillcolor="lightgray",label="Document1"];
-n28[shape="plaintext",style="filled",fillcolor="gold",label="DimensionHeightURI"];
-n29[shape="plaintext",style="filled",fillcolor="gold",label="AccessionNumberURI"];
-n30[shape="plaintext",style="filled",fillcolor="gold",label="values"];
-n31[shape="plaintext",style="filled",fillcolor="gold",label="TitleURI"];
-n32[shape="plaintext",style="filled",fillcolor="gold",label="DescriptionURI"];
-n33[shape="plaintext",style="filled",fillcolor="gold",label="DimensionsTextURI"];
-n34[shape="plaintext",style="filled",fillcolor="gold",label="PrefID_URI"];
-n35[shape="plaintext",style="filled",fillcolor="gold",label="titleLabel"];
-n36[shape="plaintext",style="filled",fillcolor="gold",label="OwnerLabel"];
-n37[shape="plaintext",style="filled",fillcolor="gold",label="ObjectID"];
-n38[shape="plaintext",style="filled",fillcolor="gold",label="DimensionWidthUnit"];
-n39[shape="plaintext",style="filled",fillcolor="gold",label="DescriptionValue"];
-n40[shape="plaintext",style="filled",fillcolor="gold",label="FirstImageURL"];
-n41[shape="plaintext",style="filled",fillcolor="gold",label="objectURL"];
-n42[shape="plaintext",style="filled",fillcolor="gold",label="technique"];
-n43[shape="plaintext",style="filled",fillcolor="gold",label="PhyWidth_tab"];
-n44[shape="plaintext",style="filled",fillcolor="gold",label="CreditLineURI"];
-n45[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDiameterURI"];
-n46[shape="plaintext",style="filled",fillcolor="gold",label="DimensionHeightUnit"];
-n47[shape="plaintext",style="filled",fillcolor="gold",label="date_latest"];
-n48[shape="plaintext",style="filled",fillcolor="gold",label="date_earliest"];
-n49[shape="plaintext",style="filled",fillcolor="gold",label="PrefID_Label"];
-n50[shape="plaintext",style="filled",fillcolor="gold",label="title"];
-n51[shape="plaintext",style="filled",fillcolor="gold",label="TechniqueLabelURI"];
-n52[shape="plaintext",style="filled",fillcolor="gold",label="CreatorURI"];
-n53[shape="plaintext",style="filled",fillcolor="gold",label="MaterialURI"];
-n54[shape="plaintext",style="filled",fillcolor="gold",label="accession_number"];
-n55[shape="plaintext",style="filled",fillcolor="gold",label="RightsURI"];
-n56[shape="plaintext",style="filled",fillcolor="gold",label="CreationLocationClassURI"];
-n57[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDepthURI"];
-n58[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDiameterUnit"];
-n59[shape="plaintext",style="filled",fillcolor="gold",label="PhysicalObjectURI"];
-n60[shape="plaintext",style="filled",fillcolor="gold",label="PhyHeight_tab"];
-n61[shape="plaintext",style="filled",fillcolor="gold",label="values"];
-n62[shape="plaintext",style="filled",fillcolor="gold",label="PhyDiameter_tab"];
-n63[shape="plaintext",style="filled",fillcolor="gold",label="PhyDimensionNotes_tab"];
-n64[shape="plaintext",style="filled",fillcolor="gold",label="PhyDepth_tab"];
-n65[shape="plaintext",style="filled",fillcolor="gold",label="ProductionURI"];
-n66[shape="plaintext",style="filled",fillcolor="gold",label="TechniqueURI"];
-n67[shape="plaintext",style="filled",fillcolor="gold",label="CreationDateTimeSpanURI"];
-n68[shape="plaintext",style="filled",fillcolor="gold",label="id"];
-n69[shape="plaintext",style="filled",fillcolor="gold",label="link"];
-n70[shape="plaintext",style="filled",fillcolor="gold",label="DeptURI"];
-n71[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDepthUnit"];
-n72[shape="plaintext",style="filled",fillcolor="gold",label="ProductionCreatorURI"];
-n73[shape="plaintext",style="filled",fillcolor="gold",label="CreationDateURI"];
-n74[shape="plaintext",style="filled",fillcolor="gold",label="credit_line"];
-n75[shape="plaintext",style="filled",fillcolor="gold",label="accessionLabel"];
-n76[shape="plaintext",style="filled",fillcolor="gold",label="description"];
-n77[shape="plaintext",style="filled",fillcolor="gold",label="values"];
-n78[shape="plaintext",style="filled",fillcolor="gold",label="creation_place"];
-n79[shape="plaintext",style="filled",fillcolor="gold",label="OwnerURI"];
-n80[shape="plaintext",style="filled",fillcolor="gold",label="DimensionWidthURI"];
-n81[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300263534"];
-n82[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300080091"];
-n83[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
-n84[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/ulan/500300517"];
-n85[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
-n86[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300312355"];
-n87[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300266036"];
-n88[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300026687"];
-n89[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
+n10[style="filled",color="white",fillcolor="lightgray",label="E17_Type_Assignment1"];
+n11[style="filled",color="white",fillcolor="lightgray",label="E55_Type1"];
+n12[style="filled",color="white",fillcolor="lightgray",label="E19_Physical_Object1"];
+n13[style="filled",color="white",fillcolor="lightgray",label="E74_Group1"];
+n14[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
+n15[style="filled",color="white",fillcolor="lightgray",label="E30_Right1"];
+n16[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object1"];
+n17[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object2"];
+n18[style="filled",color="white",fillcolor="lightgray",label="E33_Linguistic_Object3"];
+n19[style="filled",color="white",fillcolor="lightgray",label="E35_Title1"];
+n20[style="filled",color="white",fillcolor="lightgray",label="E38_Image1"];
+n21[style="filled",color="white",fillcolor="lightgray",label="E40_Legal_Body1"];
+n22[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier1"];
+n23[style="filled",color="white",fillcolor="lightgray",label="E42_Identifier2"];
+n24[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension1"];
+n25[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension2"];
+n26[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension3"];
+n27[style="filled",color="white",fillcolor="lightgray",label="E54_Dimension4"];
+n28[style="filled",color="white",fillcolor="lightgray",label="E57_Material1"];
+n29[style="filled",color="white",fillcolor="lightgray",label="Document1"];
+n30[shape="plaintext",style="filled",fillcolor="gold",label="DimensionHeightURI"];
+n31[shape="plaintext",style="filled",fillcolor="gold",label="link"];
+n32[shape="plaintext",style="filled",fillcolor="gold",label="objectURL"];
+n33[shape="plaintext",style="filled",fillcolor="gold",label="CreditLineURI"];
+n34[shape="plaintext",style="filled",fillcolor="gold",label="date_latest"];
+n35[shape="plaintext",style="filled",fillcolor="gold",label="creation_place"];
+n36[shape="plaintext",style="filled",fillcolor="gold",label="date_earliest"];
+n37[shape="plaintext",style="filled",fillcolor="gold",label="PhyWidth_tab"];
+n38[shape="plaintext",style="filled",fillcolor="gold",label="ProductionURI"];
+n39[shape="plaintext",style="filled",fillcolor="gold",label="DescriptionURI"];
+n40[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n41[shape="plaintext",style="filled",fillcolor="gold",label="PrefID_URI"];
+n42[shape="plaintext",style="filled",fillcolor="gold",label="CreatorURI"];
+n43[shape="plaintext",style="filled",fillcolor="gold",label="PrefID_Label"];
+n44[shape="plaintext",style="filled",fillcolor="gold",label="ObjectID"];
+n45[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDiameterUnit"];
+n46[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n47[shape="plaintext",style="filled",fillcolor="gold",label="DimensionsTextURI"];
+n48[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDepthUnit"];
+n49[shape="plaintext",style="filled",fillcolor="gold",label="CreationDateTimeSpanURI"];
+n50[shape="plaintext",style="filled",fillcolor="gold",label="description"];
+n51[shape="plaintext",style="filled",fillcolor="gold",label="DescriptionValue"];
+n52[shape="plaintext",style="filled",fillcolor="gold",label="DeptURI"];
+n53[shape="plaintext",style="filled",fillcolor="gold",label="CreationDateURI"];
+n54[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n55[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDiameterURI"];
+n56[shape="plaintext",style="filled",fillcolor="gold",label="AccessionNumberURI"];
+n57[shape="plaintext",style="filled",fillcolor="gold",label="DimensionWidthUnit"];
+n58[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n59[shape="plaintext",style="filled",fillcolor="gold",label="PhyDimensionNotes_tab"];
+n60[shape="plaintext",style="filled",fillcolor="gold",label="PhyDiameter_tab"];
+n61[shape="plaintext",style="filled",fillcolor="gold",label="TechniqueURI"];
+n62[shape="plaintext",style="filled",fillcolor="gold",label="MaterialURI1"];
+n63[shape="plaintext",style="filled",fillcolor="gold",label="DimensionWidthURI"];
+n64[shape="plaintext",style="filled",fillcolor="gold",label="OwnerLabel"];
+n65[shape="plaintext",style="filled",fillcolor="gold",label="PhyDepth_tab"];
+n66[shape="plaintext",style="filled",fillcolor="gold",label="FirstImageURL"];
+n67[shape="plaintext",style="filled",fillcolor="gold",label="technique"];
+n68[shape="plaintext",style="filled",fillcolor="gold",label="accessionLabel"];
+n69[shape="plaintext",style="filled",fillcolor="gold",label="RightsURI"];
+n70[shape="plaintext",style="filled",fillcolor="gold",label="id"];
+n71[shape="plaintext",style="filled",fillcolor="gold",label="TitleURI"];
+n72[shape="plaintext",style="filled",fillcolor="gold",label="DimensionHeightUnit"];
+n73[shape="plaintext",style="filled",fillcolor="gold",label="OwnerURI"];
+n74[shape="plaintext",style="filled",fillcolor="gold",label="TechniqueLabelURI"];
+n75[shape="plaintext",style="filled",fillcolor="gold",label="title"];
+n76[shape="plaintext",style="filled",fillcolor="gold",label="PhyHeight_tab"];
+n77[shape="plaintext",style="filled",fillcolor="gold",label="ClassificationLabelURI"];
+n78[shape="plaintext",style="filled",fillcolor="gold",label="credit_line"];
+n79[shape="plaintext",style="filled",fillcolor="gold",label="ProductionCreatorURI"];
+n80[shape="plaintext",style="filled",fillcolor="gold",label="accession_number"];
+n81[shape="plaintext",style="filled",fillcolor="gold",label="ClassificationURI"];
+n82[shape="plaintext",style="filled",fillcolor="gold",label="CreationLocationClassURI"];
+n83[shape="plaintext",style="filled",fillcolor="gold",label="PhysicalObjectURI"];
+n84[shape="plaintext",style="filled",fillcolor="gold",label="DimensionDepthURI"];
+n85[shape="plaintext",style="filled",fillcolor="gold",label="titleLabel"];
+n86[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300263534"];
+n87[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300080091"];
+n88[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
+n89[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/ulan/500300517"];
+n90[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300179869"];
+n91[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
+n92[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300312355"];
+n93[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300266036"];
+n94[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300026687"];
+n95[shape="plaintext",style="filled",fillcolor="#CC7799",label="http://vocab.getty.edu/aat/300404670"];
 }
 n2 -> n3[color="brown",fontcolor="black",label="P7_took_place_at"]
 n4 -> n5[color="brown",fontcolor="black",label="P32_used_general_technique"]
 n6 -> n7[color="brown",fontcolor="black",label="P4_has_time-span"]
 n8 -> n9[color="brown",fontcolor="black",label="P14_carried_out_by"]
-n10 -> n11[color="brown",fontcolor="black",label="P49_has_former_or_current_keeper"]
-n12 -> n2[color="brown",fontcolor="black",label="P108i_was_produced_by"]
-n12 -> n4[color="brown",fontcolor="black",label="P108i_was_produced_by"]
-n12 -> n6[color="brown",fontcolor="black",label="P108i_was_produced_by"]
-n12 -> n8[color="brown",fontcolor="black",label="P108i_was_produced_by"]
-n12 -> n10[color="brown",fontcolor="black",label="P46i_forms_part_of"]
-n12 -> n13[color="brown",fontcolor="black",label="P104_is_subject_to"]
-n12 -> n14[color="brown",fontcolor="black",label="P129i_is_subject_of"]
-n12 -> n15[color="brown",fontcolor="black",label="P67i_is_referred_to_by"]
-n12 -> n16[color="brown",fontcolor="black",label="P67i_is_referred_to_by"]
-n12 -> n17[color="brown",fontcolor="black",label="P102_has_title"]
-n12 -> n18[color="brown",fontcolor="black",label="P138i_has_representation"]
-n12 -> n19[color="brown",fontcolor="black",label="P52_has_current_owner"]
-n12 -> n20[color="brown",fontcolor="black",label="P1_is_identified_by"]
-n12 -> n21[color="brown",fontcolor="black",label="P1_is_identified_by"]
-n12 -> n22[color="brown",fontcolor="black",label="P43_has_dimension"]
-n12 -> n23[color="brown",fontcolor="black",label="P43_has_dimension"]
-n12 -> n24[color="brown",fontcolor="black",label="P43_has_dimension"]
-n12 -> n25[color="brown",fontcolor="black",label="P43_has_dimension"]
-n12 -> n26[color="brown",fontcolor="black",label="P45_consists_of"]
-n12 -> n27[color="brown",fontcolor="black",label="homepage"]
-n23 -> n28[color="brown",fontcolor="black",label="classLink"]
-n20 -> n29[color="brown",fontcolor="black",label="classLink"]
-n13 -> n30[color="brown",fontcolor="black",label="P3_has_note"]
-n17 -> n31[color="brown",fontcolor="black",label="classLink"]
-n14 -> n32[color="brown",fontcolor="black",label="classLink"]
-n16 -> n33[color="brown",fontcolor="black",label="classLink"]
-n21 -> n34[color="brown",fontcolor="black",label="classLink"]
-n12 -> n35[color="brown",fontcolor="black",label="label"]
-n19 -> n36[color="brown",fontcolor="black",label="label"]
-n12 -> n37[color="brown",fontcolor="black",label="classLink"]
-n22 -> n38[color="brown",fontcolor="black",label="P91_has_unit"]
-n14 -> n39[color="brown",fontcolor="black",label="value"]
-n18 -> n40[color="brown",fontcolor="black",label="classLink"]
-n27 -> n41[color="brown",fontcolor="black",label="label"]
-n5 -> n42[color="brown",fontcolor="black",label="label"]
-n22 -> n43[color="brown",fontcolor="black",label="value"]
-n15 -> n44[color="brown",fontcolor="black",label="classLink"]
-n24 -> n45[color="brown",fontcolor="black",label="classLink"]
-n23 -> n46[color="brown",fontcolor="black",label="P91_has_unit"]
-n7 -> n47[color="brown",fontcolor="black",label="P82b_end_of_the_end"]
-n7 -> n48[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
-n21 -> n49[color="brown",fontcolor="black",label="label"]
-n17 -> n50[color="brown",fontcolor="black",label="value"]
-n5 -> n51[color="brown",fontcolor="black",label="classLink"]
-n9 -> n52[color="brown",fontcolor="black",label="classLink"]
-n26 -> n53[color="brown",fontcolor="black",label="classLink"]
-n20 -> n54[color="brown",fontcolor="black",label="value"]
-n13 -> n55[color="brown",fontcolor="black",label="classLink"]
-n3 -> n56[color="brown",fontcolor="black",label="classLink"]
-n25 -> n57[color="brown",fontcolor="black",label="classLink"]
-n24 -> n58[color="brown",fontcolor="black",label="P91_has_unit"]
-n10 -> n59[color="brown",fontcolor="black",label="classLink"]
-n23 -> n60[color="brown",fontcolor="black",label="value"]
-n26 -> n61[color="brown",fontcolor="black",label="prefLabel"]
-n24 -> n62[color="brown",fontcolor="black",label="value"]
-n16 -> n63[color="brown",fontcolor="black",label="value"]
-n25 -> n64[color="brown",fontcolor="black",label="value"]
-n2 -> n65[color="brown",fontcolor="black",label="classLink"]
-n4 -> n66[color="brown",fontcolor="black",label="classLink"]
-n7 -> n67[color="brown",fontcolor="black",label="classLink"]
-n21 -> n68[color="brown",fontcolor="black",label="value"]
-n27 -> n69[color="brown",fontcolor="black",label="classLink"]
-n11 -> n70[color="brown",fontcolor="black",label="classLink"]
-n25 -> n71[color="brown",fontcolor="black",label="P91_has_unit"]
-n8 -> n72[color="brown",fontcolor="black",label="classLink"]
-n6 -> n73[color="brown",fontcolor="black",label="classLink"]
-n15 -> n74[color="brown",fontcolor="black",label="value"]
-n20 -> n75[color="brown",fontcolor="black",label="label"]
-n12 -> n76[color="brown",fontcolor="black",label="description"]
-n11 -> n77[color="brown",fontcolor="black",label="label"]
-n3 -> n78[color="brown",fontcolor="black",label="label"]
-n19 -> n79[color="brown",fontcolor="black",label="classLink"]
-n22 -> n80[color="brown",fontcolor="black",label="classLink"]
-n11 -> n81[color="brown",fontcolor="black",label="P2_has_type"]
-n14 -> n82[color="brown",fontcolor="black",label="P2_has_type"]
-n14 -> n83[color="brown",fontcolor="black",label="P2_has_type"]
-n19 -> n84[color="brown",fontcolor="black",label="exactMatch"]
-n17 -> n85[color="brown",fontcolor="black",label="P2_has_type"]
-n20 -> n86[color="brown",fontcolor="black",label="P2_has_type"]
+n10 -> n11[color="brown",fontcolor="black",label="P42_assigned"]
+n12 -> n13[color="brown",fontcolor="black",label="P49_has_former_or_current_keeper"]
+n14 -> n2[color="brown",fontcolor="black",label="P108i_was_produced_by"]
+n14 -> n4[color="brown",fontcolor="black",label="P108i_was_produced_by"]
+n14 -> n6[color="brown",fontcolor="black",label="P108i_was_produced_by"]
+n14 -> n8[color="brown",fontcolor="black",label="P108i_was_produced_by"]
+n14 -> n10[color="brown",fontcolor="black",label="P41i_was_classified_by"]
+n14 -> n12[color="brown",fontcolor="black",label="P46i_forms_part_of"]
+n14 -> n15[color="brown",fontcolor="black",label="P104_is_subject_to"]
+n14 -> n16[color="brown",fontcolor="black",label="P129i_is_subject_of"]
+n14 -> n17[color="brown",fontcolor="black",label="P67i_is_referred_to_by"]
+n14 -> n18[color="brown",fontcolor="black",label="P129i_is_subject_of"]
+n14 -> n19[color="brown",fontcolor="black",label="P102_has_title"]
+n14 -> n20[color="brown",fontcolor="black",label="P138i_has_representation"]
+n14 -> n21[color="brown",fontcolor="black",label="P52_has_current_owner"]
+n14 -> n22[color="brown",fontcolor="black",label="P1_is_identified_by"]
+n14 -> n23[color="brown",fontcolor="black",label="P1_is_identified_by"]
+n14 -> n24[color="brown",fontcolor="black",label="P43_has_dimension"]
+n14 -> n25[color="brown",fontcolor="black",label="P43_has_dimension"]
+n14 -> n26[color="brown",fontcolor="black",label="P43_has_dimension"]
+n14 -> n27[color="brown",fontcolor="black",label="P43_has_dimension"]
+n14 -> n28[color="brown",fontcolor="black",label="P45_consists_of"]
+n14 -> n29[color="brown",fontcolor="black",label="homepage"]
+n25 -> n30[color="brown",fontcolor="black",label="classLink"]
+n29 -> n31[color="brown",fontcolor="black",label="classLink"]
+n29 -> n32[color="brown",fontcolor="black",label="label"]
+n17 -> n33[color="brown",fontcolor="black",label="classLink"]
+n7 -> n34[color="brown",fontcolor="black",label="P82b_end_of_the_end"]
+n3 -> n35[color="brown",fontcolor="black",label="label"]
+n7 -> n36[color="brown",fontcolor="black",label="P82a_begin_of_the_begin"]
+n24 -> n37[color="brown",fontcolor="black",label="value"]
+n2 -> n38[color="brown",fontcolor="black",label="classLink"]
+n16 -> n39[color="brown",fontcolor="black",label="classLink"]
+n28 -> n40[color="brown",fontcolor="black",label="prefLabel"]
+n23 -> n41[color="brown",fontcolor="black",label="classLink"]
+n9 -> n42[color="brown",fontcolor="black",label="classLink"]
+n23 -> n43[color="brown",fontcolor="black",label="label"]
+n14 -> n44[color="brown",fontcolor="black",label="classLink"]
+n26 -> n45[color="brown",fontcolor="black",label="P91_has_unit"]
+n13 -> n46[color="brown",fontcolor="black",label="label"]
+n18 -> n47[color="brown",fontcolor="black",label="classLink"]
+n27 -> n48[color="brown",fontcolor="black",label="P91_has_unit"]
+n7 -> n49[color="brown",fontcolor="black",label="classLink"]
+n14 -> n50[color="brown",fontcolor="black",label="description"]
+n16 -> n51[color="brown",fontcolor="black",label="value"]
+n13 -> n52[color="brown",fontcolor="black",label="classLink"]
+n6 -> n53[color="brown",fontcolor="black",label="classLink"]
+n15 -> n54[color="brown",fontcolor="black",label="P3_has_note"]
+n26 -> n55[color="brown",fontcolor="black",label="classLink"]
+n22 -> n56[color="brown",fontcolor="black",label="classLink"]
+n24 -> n57[color="brown",fontcolor="black",label="P91_has_unit"]
+n11 -> n58[color="brown",fontcolor="black",label="label"]
+n18 -> n59[color="brown",fontcolor="black",label="value"]
+n26 -> n60[color="brown",fontcolor="black",label="value"]
+n4 -> n61[color="brown",fontcolor="black",label="classLink"]
+n28 -> n62[color="brown",fontcolor="black",label="classLink"]
+n24 -> n63[color="brown",fontcolor="black",label="classLink"]
+n21 -> n64[color="brown",fontcolor="black",label="label"]
+n27 -> n65[color="brown",fontcolor="black",label="value"]
+n20 -> n66[color="brown",fontcolor="black",label="classLink"]
+n5 -> n67[color="brown",fontcolor="black",label="label"]
+n22 -> n68[color="brown",fontcolor="black",label="label"]
+n15 -> n69[color="brown",fontcolor="black",label="classLink"]
+n23 -> n70[color="brown",fontcolor="black",label="value"]
+n19 -> n71[color="brown",fontcolor="black",label="classLink"]
+n25 -> n72[color="brown",fontcolor="black",label="P91_has_unit"]
+n21 -> n73[color="brown",fontcolor="black",label="classLink"]
+n5 -> n74[color="brown",fontcolor="black",label="classLink"]
+n19 -> n75[color="brown",fontcolor="black",label="value"]
+n25 -> n76[color="brown",fontcolor="black",label="value"]
+n11 -> n77[color="brown",fontcolor="black",label="classLink"]
+n17 -> n78[color="brown",fontcolor="black",label="value"]
+n8 -> n79[color="brown",fontcolor="black",label="classLink"]
+n22 -> n80[color="brown",fontcolor="black",label="value"]
+n10 -> n81[color="brown",fontcolor="black",label="classLink"]
+n3 -> n82[color="brown",fontcolor="black",label="classLink"]
+n12 -> n83[color="brown",fontcolor="black",label="classLink"]
+n27 -> n84[color="brown",fontcolor="black",label="classLink"]
+n14 -> n85[color="brown",fontcolor="black",label="label"]
+n13 -> n86[color="brown",fontcolor="black",label="P2_has_type"]
 n16 -> n87[color="brown",fontcolor="black",label="P2_has_type"]
-n15 -> n88[color="brown",fontcolor="black",label="P2_has_type"]
-n21 -> n89[color="brown",fontcolor="black",label="P2_has_type"]
+n14 -> n17[color="brown",fontcolor="black",label="P129i_is_subject_of"]
+n16 -> n88[color="brown",fontcolor="black",label="P2_has_type"]
+n14 -> n18[color="brown",fontcolor="black",label="P67i_is_referred_to_by"]
+n21 -> n89[color="brown",fontcolor="black",label="exactMatch"]
+n10 -> n90[color="brown",fontcolor="black",label="P21_had_general_purpose"]
+n19 -> n91[color="brown",fontcolor="black",label="P2_has_type"]
+n14 -> n11[color="brown",fontcolor="black",label="P2_has_type"]
+n22 -> n92[color="brown",fontcolor="black",label="P2_has_type"]
+n18 -> n93[color="brown",fontcolor="black",label="P2_has_type"]
+n17 -> n94[color="brown",fontcolor="black",label="P2_has_type"]
+n23 -> n95[color="brown",fontcolor="black",label="P2_has_type"]
 }
