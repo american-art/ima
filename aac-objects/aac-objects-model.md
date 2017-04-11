@@ -358,6 +358,24 @@ else:
     return ""
 ```
 
+#### _StartDateFormatted_
+From column: _data / date_earliest_
+``` python
+return getValue("date_earliest")+"-01-01"
+```
+
+#### _EndDateFormatted_
+From column: _data / date_latest_
+``` python
+return getValue("date_latest")+"-12-31"
+```
+
+#### _DateLabel_
+From column: _data / CreationDateTimeSpanURI_
+``` python
+return getValue("StartDateFormatted") + " to " + getValue("EndDateFormatted")
+```
+
 
 ## Selections
 
@@ -372,6 +390,7 @@ else:
 | _CreationLocationClassURI_ | `uri` | `crm:E53_Place1`|
 | _CreatorURI_ | `uri` | `crm:E39_Actor1`|
 | _CreditLineURI_ | `uri` | `crm:E33_Linguistic_Object2`|
+| _DateLabel_ | `rdfs:label` | `crm:E52_Time-Span1`|
 | _DeptURI_ | `uri` | `crm:E74_Group1`|
 | _DescriptionURI_ | `uri` | `crm:E33_Linguistic_Object1`|
 | _DescriptionValue_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
@@ -384,6 +403,7 @@ else:
 | _DimensionWidthURI_ | `uri` | `crm:E54_Dimension1`|
 | _DimensionWidthUnit_ | `crm:P91_has_unit` | `crm:E54_Dimension1`|
 | _DimensionsTextURI_ | `uri` | `crm:E33_Linguistic_Object3`|
+| _EndDateFormatted_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _FirstImageURL_ | `uri` | `crm:E38_Image1`|
 | _MaterialURI1_ | `uri` | `crm:E57_Material1`|
 | _ObjectID_ | `uri` | `crm:E22_Man-Made_Object1`|
@@ -400,6 +420,7 @@ else:
 | _ProductionCreatorURI_ | `uri` | `crm:E12_Production4`|
 | _ProductionURI_ | `uri` | `crm:E12_Production1`|
 | _RightsURI_ | `uri` | `crm:E30_Right1`|
+| _StartDateFormatted_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
 | _TechniqueLabelURI_ | `uri` | `crm:E55_Type2`|
 | _TechniqueURI_ | `uri` | `crm:E12_Production2`|
 | _TitleURI_ | `uri` | `crm:E35_Title1`|
@@ -407,8 +428,6 @@ else:
 | _accession_number_ | `rdf:value` | `crm:E42_Identifier1`|
 | _creation_place_ | `rdfs:label` | `crm:E53_Place1`|
 | _credit_line_ | `rdf:value` | `crm:E33_Linguistic_Object2`|
-| _date_earliest_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
-| _date_latest_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _description_ | `dc:description` | `crm:E22_Man-Made_Object1`|
 | _id_ | `rdf:value` | `crm:E42_Identifier2`|
 | _link_ | `uri` | `foaf:Document1`|
