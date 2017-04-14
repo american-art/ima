@@ -102,10 +102,10 @@ From column: _data / TitleURI_
 return getValue("ObjectID")+"/production"
 ```
 
-#### _CreationLocationClassURI_
+#### _NIU2_
 From column: _data / ProductionURI_
 ``` python
-return getValue("ObjectID")+"/production/creationlocation"
+
 ```
 
 #### _FirstImageURL_
@@ -262,7 +262,10 @@ else:
 #### _DimensionWidthURI_
 From column: _data / dimensions / PhyType_tab_
 ``` python
-return UM.uri_from_fields(getValue("ObjectID")+'/width/',getValue('PhyType_tab'))
+if getValue("PhyWidth_tab"):
+    return UM.uri_from_fields(getValue("ObjectID")+'/width/',getValue('PhyType_tab'))
+else:
+    return ""
 ```
 
 #### _DimensionDepthUnit_
@@ -270,7 +273,7 @@ From column: _data / dimensions / PhyUnitLength_tab_
 ``` python
 v = getValue("PhyUnitLength_tab").replace('.','')
 if "." in v and getValue("DimensionDepthURI"):
-    v = v.replace('.','')
+    v = v.replace('.','').strip().lower()
 return v
 ```
 
@@ -279,7 +282,7 @@ From column: _data / dimensions / DimensionDepthUnit_
 ``` python
 v = getValue("PhyUnitLength_tab").replace('.','')
 if "." in v:
-    v = v.replace('.','')
+    v = v.replace('.','').strip().lower()
 return v
 ```
 
@@ -288,7 +291,7 @@ From column: _data / dimensions / DimensionWidthUnit_
 ``` python
 v = getValue("PhyUnitLength_tab").replace('.','')
 if "." in v:
-    v = v.replace('.','')
+    v = v.replace('.','').strip().lower()
 return v
 ```
 
@@ -297,7 +300,7 @@ From column: _data / dimensions / DimensionHeightUnit_
 ``` python
 v = getValue("PhyUnitLength_tab").replace('.','')
 if "." in v:
-    v = v.replace('.','')
+    v = v.replace('.','').strip().lower()
 return v
 ```
 
@@ -353,7 +356,7 @@ else:
 From column: _data / mediums / values_
 ``` python
 if getValue("values"):
-    return getValue("ObjectID")+"/material"
+    return UM.uri_from_fields("thesauri/material/",getValue("values"))
 else:
     return ""
 ```
@@ -427,6 +430,15 @@ else:
     return ""
 ```
 
+#### _PlaceURI_
+From column: _data / Glue_1 / creation_place_
+``` python
+if getValue("creation_place"):
+    return UM.uri_from_fields("thesauri/place/",getValue("creation_place"))
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -438,17 +450,14 @@ else:
 | _ClassificationURI_ | `uri` | `crm:E17_Type_Assignment1`|
 | _CreationDateTimeSpanURI_ | `uri` | `crm:E52_Time-Span1`|
 | _CreationDateURI_ | `uri` | `crm:E12_Production3`|
-| _CreationLocationClassURI_ | `uri` | `crm:E53_Place1`|
 | _CreatorURI_ | `uri` | `crm:E39_Actor1`|
 | _CreditLineURI_ | `uri` | `crm:E33_Linguistic_Object2`|
-| _DateLabel_ | `rdfs:label` | `crm:E52_Time-Span1`|
 | _DeptURI_ | `uri` | `crm:E74_Group1`|
 | _DepthUnitURI_ | `uri` | `crm:E58_Measurement_Unit1`|
 | _DescriptionURI_ | `uri` | `crm:E33_Linguistic_Object1`|
 | _DescriptionValue_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
 | _DiameterUnitURI_ | `uri` | `crm:E58_Measurement_Unit2`|
 | _DimensionDepthURI_ | `uri` | `crm:E54_Dimension4`|
-| _DimensionDepthUnit_ | `rdfs:label` | `crm:E58_Measurement_Unit1`|
 | _DimensionDiameterURI_ | `uri` | `crm:E54_Dimension3`|
 | _DimensionDiameterUnit_ | `rdf:value` | `crm:E58_Measurement_Unit2`|
 | _DimensionHeightURI_ | `uri` | `crm:E54_Dimension2`|
@@ -469,6 +478,7 @@ else:
 | _PhyHeight_tab_ | `rdf:value` | `crm:E54_Dimension2`|
 | _PhyWidth_tab_ | `rdf:value` | `crm:E54_Dimension1`|
 | _PhysicalObjectURI_ | `uri` | `crm:E19_Physical_Object1`|
+| _PlaceURI_ | `uri` | `crm:E53_Place1`|
 | _PrefID_Label_ | `rdfs:label` | `crm:E42_Identifier2`|
 | _PrefID_URI_ | `uri` | `crm:E42_Identifier2`|
 | _ProductionCreatorURI_ | `uri` | `crm:E12_Production4`|
@@ -483,6 +493,7 @@ else:
 | _accession_number_ | `rdf:value` | `crm:E42_Identifier1`|
 | _creation_place_ | `rdfs:label` | `crm:E53_Place1`|
 | _credit_line_ | `rdf:value` | `crm:E33_Linguistic_Object2`|
+| _date_earliest_ | `rdfs:label` | `crm:E52_Time-Span1`|
 | _description_ | `dc:description` | `crm:E22_Man-Made_Object1`|
 | _id_ | `rdf:value` | `crm:E42_Identifier2`|
 | _link_ | `uri` | `foaf:Document1`|
