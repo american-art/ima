@@ -64,7 +64,7 @@ else:
 From column: _data / firstid_
 ``` python
 if getValue("name_full")!="Unknown":
-    return "actor/id/"+getValue('firstid')
+    return "actor/"+getValue('firstid')
 else:
     ""
 ```
@@ -72,7 +72,10 @@ else:
 #### _NameURI_
 From column: _data / uri_
 ``` python
-return getValue('uri')+"/name"
+if getValue("name_full") and getValue("name_full")!="Unknown":
+    return getValue('uri')+"/name"
+else:
+    return ""
 ```
 
 #### _GivenNameClassURI_
@@ -108,7 +111,7 @@ return getValue('uri')+"/name/middlename/type"
 #### _FamilyNameClassURI_
 From column: _data / GivenNameClassURI_
 ``` python
-if getValue("name_last"):
+if getValue("name_last") and getValue("name_last")!="Unknown":
     return getValue('uri')+"/name/last_name"
 else:
     return ""
@@ -147,13 +150,19 @@ else:
 #### _GenderTypeClassURI_
 From column: _data / GenderClassURI_
 ``` python
-return getValue('uri')+"/gender/type"
+if getValue("sex"):
+    return getValue('uri')+"/gender/type"
+else:
+    return ""
 ```
 
 #### _birthdatelabel_
 From column: _data / dates / birth_
 ``` python
-return getValue("birth")
+if getValue("birth"):
+    return getValue("birth")
+else:
+    return ""
 ```
 
 #### _deathdatelabel_
@@ -174,7 +183,10 @@ else:
 #### _BirthDateURI_
 From column: _data / dates / BirthURI_
 ``` python
-return getValue('uri')+"/birth/date"
+if getValue("birth"):
+    return getValue('uri')+"/birth/date"
+else:
+    return ""
 ```
 
 #### _NotInUse_
@@ -195,7 +207,10 @@ else:
 #### _DeathDateURI_
 From column: _data / dates / BirthDateURI_
 ``` python
-return getValue('uri')+"/death/date"
+if getValue("death"):
+    return getValue('uri')+"/death/date"
+else:
+    return ""
 ```
 
 #### _NotInUse1_
@@ -222,13 +237,19 @@ else:
 #### _BirthLatest_
 From column: _data / dates / birth_
 ``` python
-return getValue("birth")
+if getValue("birth"):
+    return getValue("birth")+"-12-31"
+else:   
+    return ""
 ```
 
-#### _DeathLabel_
+#### _DeathLatest_
 From column: _data / dates / death_
 ``` python
-return getValue("death")
+if getValue("death"):
+    return getValue("death")+"-12-31"
+else:
+    return ""
 ```
 
 #### _NationalityURI_
@@ -255,6 +276,24 @@ else:
     return ""
 ```
 
+#### _BirthEarliest_
+From column: _data / dates / birth_
+``` python
+if getValue("birth"):
+    return getValue("birth")+"-01-01"
+else:
+    return ""
+```
+
+#### _DeathEarliest_
+From column: _data / dates / death_
+``` python
+if getValue("death"):
+    return getValue("death")+"-01-01"
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -262,11 +301,13 @@ else:
 | Column | Property | Class |
 |  ----- | -------- | ----- |
 | _BirthDateURI_ | `uri` | `crm:E52_Time-Span1`|
+| _BirthEarliest_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
 | _BirthLatest_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _BirthLocation_ | `uri` | `crm:E53_Place1`|
 | _BirthURI_ | `uri` | `crm:E63_Beginning_of_Existence1`|
 | _DeathDateURI_ | `uri` | `crm:E52_Time-Span2`|
-| _DeathLabel_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span2`|
+| _DeathEarliest_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span2`|
+| _DeathLatest_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span2`|
 | _DeathLocation_ | `uri` | `crm:E53_Place2`|
 | _DeathURI_ | `uri` | `crm:E64_End_of_Existence1`|
 | _FamilyNameClassURI_ | `uri` | `crm:E82_Actor_Appellation5`|
@@ -282,10 +323,8 @@ else:
 | _NameURI_ | `uri` | `crm:E82_Actor_Appellation2`|
 | _NationalityURI_ | `uri` | `crm:E74_Group1`|
 | _UlanURI_ | `uri` | `skos:Concept1`|
-| _birth_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span1`|
 | _birth_ | `rdfs:label` | `crm:E53_Place1`|
 | _birthdatelabel_ | `rdfs:label` | `crm:E52_Time-Span1`|
-| _death_ | `crm:P82a_begin_of_the_begin` | `crm:E52_Time-Span2`|
 | _death_ | `rdfs:label` | `crm:E53_Place2`|
 | _deathdatelabel_ | `rdfs:label` | `crm:E52_Time-Span2`|
 | _fullnamelabel_ | `rdfs:label` | `crm:E39_Actor1`|
@@ -296,6 +335,7 @@ else:
 | _name_suffix_ | `rdf:value` | `crm:E82_Actor_Appellation6`|
 | _nationality_ | `rdfs:label` | `crm:E74_Group1`|
 | _sex_ | `rdfs:label` | `crm:E55_Type5`|
+| _ulan_id_ | `rdfs:label` | `skos:Concept1`|
 | _uri_ | `uri` | `crm:E39_Actor1`|
 
 
