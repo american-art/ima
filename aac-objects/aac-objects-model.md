@@ -48,7 +48,7 @@ Literal Type: ``
 #### _ObjectID_
 From column: _data / id_
 ``` python
-return "object/id/"+getValue("id")
+return "object/"+getValue("id")
 ```
 
 #### _objectURL_
@@ -223,7 +223,7 @@ return getValue("ProductionURI")+'/timespan'
 #### _CreatorURI_
 From column: _data / actors / id_
 ``` python
-return 'actor/id/'+getValue("id")
+return 'actor/'+getValue("id")
 ```
 
 #### _ProductionCreatorURI_
@@ -244,13 +244,19 @@ else:
 #### _DimensionDiameterURI_
 From column: _data / dimensions / PhyType_tab_
 ``` python
-return UM.uri_from_fields(getValue("ObjectID")+'/diameter/',getValue('PhyType_tab'))
+if getValue("PhyDiameter_tab"):
+    return UM.uri_from_fields(getValue("ObjectID")+'/diameter/',getValue('PhyType_tab'))
+else:
+    return ""
 ```
 
 #### _DimensionHeightURI_
 From column: _data / dimensions / PhyType_tab_
 ``` python
-return UM.uri_from_fields(getValue("ObjectID")+'/height/',getValue('PhyType_tab'))
+if getValue("PhyHeight_tab"):
+    return UM.uri_from_fields(getValue("ObjectID")+'/height/',getValue('PhyType_tab'))
+else:
+    return ""
 ```
 
 #### _DimensionWidthURI_
@@ -263,7 +269,7 @@ return UM.uri_from_fields(getValue("ObjectID")+'/width/',getValue('PhyType_tab')
 From column: _data / dimensions / PhyUnitLength_tab_
 ``` python
 v = getValue("PhyUnitLength_tab").replace('.','')
-if "." in v:
+if "." in v and getValue("DimensionDepthURI"):
     v = v.replace('.','')
 return v
 ```
@@ -298,7 +304,10 @@ return v
 #### _DimensionsTextURI_
 From column: _data / dimensions / DimensionWidthURI_
 ``` python
-return getValue("ObjectID")+'/dimensiontext'
+if "Metric" in getValue("PhyDimensionNotes_tab"):
+    return getValue("ObjectID")+'/dimensiontext'
+else:
+    return ""
 ```
 
 #### _OwnerURI_
@@ -376,6 +385,48 @@ From column: _data / CreationDateTimeSpanURI_
 return getValue("StartDateFormatted") + " to " + getValue("EndDateFormatted")
 ```
 
+#### _DepthUnitURI_
+From column: _data / dimensions / PhyDepth_tab_
+``` python
+if getValue("DimensionDepthUnit") and getValue("DimensionDepthURI"):
+    return UM.uri_from_fields("thesauri/dimension_type/",getValue("DimensionDepthUnit"))
+else:
+    return ""
+```
+
+#### _DiameterUnitURI_
+From column: _data / dimensions / PhyDiameter_tab_
+``` python
+if getValue("DimensionDiameterUnit") and getValue("DimensionDiameterURI"):
+    return UM.uri_from_fields("thesauri/dimension_type/",getValue("DimensionDiameterUnit"))
+else:
+    return ""
+```
+
+#### _PhyHeight_tab_
+From column: _data / dimensions / PhyHeight_tab_
+``` python
+return getValue("PhyHeight_tab")
+```
+
+#### _HeightUnitURI_
+From column: _data / dimensions / PhyHeight_tab_
+``` python
+if getValue("DimensionHeightUnit") and getValue("DimensionHeightURI"):
+    return UM.uri_from_fields("thesauri/dimension_type/",getValue("DimensionHeightUnit"))
+else:
+    return ""
+```
+
+#### _WidthUnitURI_
+From column: _data / dimensions / PhyWidth_tab_
+``` python
+if getValue("DimensionWidthUnit") and getValue("DimensionWidthURI"):
+    return UM.uri_from_fields("thesauri/dimension_type/",getValue("DimensionWidthUnit"))
+else:
+    return ""
+```
+
 
 ## Selections
 
@@ -392,19 +443,22 @@ return getValue("StartDateFormatted") + " to " + getValue("EndDateFormatted")
 | _CreditLineURI_ | `uri` | `crm:E33_Linguistic_Object2`|
 | _DateLabel_ | `rdfs:label` | `crm:E52_Time-Span1`|
 | _DeptURI_ | `uri` | `crm:E74_Group1`|
+| _DepthUnitURI_ | `uri` | `crm:E58_Measurement_Unit1`|
 | _DescriptionURI_ | `uri` | `crm:E33_Linguistic_Object1`|
 | _DescriptionValue_ | `rdf:value` | `crm:E33_Linguistic_Object1`|
+| _DiameterUnitURI_ | `uri` | `crm:E58_Measurement_Unit2`|
 | _DimensionDepthURI_ | `uri` | `crm:E54_Dimension4`|
-| _DimensionDepthUnit_ | `crm:P91_has_unit` | `crm:E54_Dimension4`|
+| _DimensionDepthUnit_ | `rdfs:label` | `crm:E58_Measurement_Unit1`|
 | _DimensionDiameterURI_ | `uri` | `crm:E54_Dimension3`|
-| _DimensionDiameterUnit_ | `crm:P91_has_unit` | `crm:E54_Dimension3`|
+| _DimensionDiameterUnit_ | `rdf:value` | `crm:E58_Measurement_Unit2`|
 | _DimensionHeightURI_ | `uri` | `crm:E54_Dimension2`|
-| _DimensionHeightUnit_ | `crm:P91_has_unit` | `crm:E54_Dimension2`|
+| _DimensionHeightUnit_ | `rdf:value` | `crm:E58_Measurement_Unit3`|
 | _DimensionWidthURI_ | `uri` | `crm:E54_Dimension1`|
-| _DimensionWidthUnit_ | `crm:P91_has_unit` | `crm:E54_Dimension1`|
+| _DimensionWidthUnit_ | `rdf:value` | `crm:E58_Measurement_Unit4`|
 | _DimensionsTextURI_ | `uri` | `crm:E33_Linguistic_Object3`|
 | _EndDateFormatted_ | `crm:P82b_end_of_the_end` | `crm:E52_Time-Span1`|
 | _FirstImageURL_ | `uri` | `crm:E38_Image1`|
+| _HeightUnitURI_ | `uri` | `crm:E58_Measurement_Unit3`|
 | _MaterialURI1_ | `uri` | `crm:E57_Material1`|
 | _ObjectID_ | `uri` | `crm:E22_Man-Made_Object1`|
 | _OwnerLabel_ | `rdfs:label` | `crm:E40_Legal_Body1`|
@@ -424,6 +478,7 @@ return getValue("StartDateFormatted") + " to " + getValue("EndDateFormatted")
 | _TechniqueLabelURI_ | `uri` | `crm:E55_Type2`|
 | _TechniqueURI_ | `uri` | `crm:E12_Production2`|
 | _TitleURI_ | `uri` | `crm:E35_Title1`|
+| _WidthUnitURI_ | `uri` | `crm:E58_Measurement_Unit4`|
 | _accessionLabel_ | `rdfs:label` | `crm:E42_Identifier1`|
 | _accession_number_ | `rdf:value` | `crm:E42_Identifier1`|
 | _creation_place_ | `rdfs:label` | `crm:E53_Place1`|
@@ -472,15 +527,19 @@ return getValue("StartDateFormatted") + " to " + getValue("EndDateFormatted")
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension4`|
 | `crm:E22_Man-Made_Object1` | `crm:P45_consists_of` | `crm:E57_Material1`|
 | `crm:E22_Man-Made_Object1` | `foaf:homepage` | `foaf:Document1`|
-| `crm:E22_Man-Made_Object1` | `crm:P129i_is_subject_of` | `crm:E33_Linguistic_Object2`|
 | `crm:E22_Man-Made_Object1` | `crm:P67i_is_referred_to_by` | `crm:E33_Linguistic_Object3`|
+| `crm:E22_Man-Made_Object1` | `crm:P129i_is_subject_of` | `crm:E33_Linguistic_Object2`|
 | `crm:E22_Man-Made_Object1` | `crm:P2_has_type` | `crm:E55_Type1`|
-| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300080091`|
 | `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
+| `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300080091`|
 | `crm:E33_Linguistic_Object2` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300026687`|
 | `crm:E33_Linguistic_Object3` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300266036`|
 | `crm:E35_Title1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
 | `crm:E40_Legal_Body1` | `skos:exactMatch` | `http://vocab.getty.edu/ulan/500300517`|
 | `crm:E42_Identifier1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300312355`|
 | `crm:E42_Identifier2` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300404670`|
+| `crm:E54_Dimension1` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit4`|
+| `crm:E54_Dimension2` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit3`|
+| `crm:E54_Dimension3` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit2`|
+| `crm:E54_Dimension4` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit1`|
 | `crm:E74_Group1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300263534`|
