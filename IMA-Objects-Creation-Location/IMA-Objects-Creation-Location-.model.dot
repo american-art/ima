@@ -1,0 +1,21 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="IMA-SampleObjects-Creation-Location-Data-for-AAC.csv"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="E12_Production1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="E53_Place1"];
+n4[style="filled",color="white",fillcolor="lightgray",label="E22_Man-Made_Object1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="ProductionURI"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="CreationPlaceLabel"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="ObjectURI"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="CreationPlaceURI"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="P7_took_place_at"]
+n4 -> n2[color="brown",fontcolor="black",label="P108i_was_produced_by"]
+n2 -> n5[color="brown",fontcolor="black",label="classLink"]
+n3 -> n6[color="brown",fontcolor="black",label="label"]
+n4 -> n7[color="brown",fontcolor="black",label="classLink"]
+n3 -> n8[color="brown",fontcolor="black",label="classLink"]
+}
