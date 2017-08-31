@@ -226,22 +226,22 @@ else:
     return ""
 ```
 
+#### _LinkURI_
+From column: _LINK_
+``` python
+return getValue("LINK")
+```
+
 #### _DepartmentURI_
-From column: _PhysicalObjectURI_
+From column: _CollectionURI_
 ``` python
 return "thesauri/curatorialdepartment"
 ```
 
 #### _DepartmentName_
-From column: _DepartmentURI_
+From column: _CollectionURI_
 ``` python
 return "Indianapolis Museum of Art Curatorial Department"
-```
-
-#### _LinkURI_
-From column: _LINK_
-``` python
-return getValue("LINK")
 ```
 
 
