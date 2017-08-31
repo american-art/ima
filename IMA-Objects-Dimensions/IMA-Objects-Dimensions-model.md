@@ -8,6 +8,26 @@ Literal Type: ``
 <br/>Language: ``
 <br/>isUri: `true`
 
+#### Literal Node: `http://vocab.getty.edu/aat/300055647`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
+#### Literal Node: `http://vocab.getty.edu/aat/300055644`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
+#### Literal Node: `http://vocab.getty.edu/aat/300055624`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
+#### Literal Node: `http://vocab.getty.edu/aat/300072633`
+Literal Type: ``
+<br/>Language: ``
+<br/>isUri: `true`
+
 
 ## PyTransforms
 #### _ObjectURI_
@@ -98,6 +118,10 @@ else:
 | `crm:E22_Man-Made_Object1` | `crm:P43_has_dimension` | `crm:E54_Dimension4`|
 | `crm:E33_Linguistic_Object1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300266036`|
 | `crm:E54_Dimension1` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit1`|
+| `crm:E54_Dimension1` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300055644`|
+| `crm:E54_Dimension2` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300055647`|
 | `crm:E54_Dimension2` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit1`|
+| `crm:E54_Dimension3` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300072633`|
 | `crm:E54_Dimension3` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit1`|
 | `crm:E54_Dimension4` | `crm:P91_has_unit` | `crm:E58_Measurement_Unit1`|
+| `crm:E54_Dimension4` | `crm:P2_has_type` | `http://vocab.getty.edu/aat/300055624`|
