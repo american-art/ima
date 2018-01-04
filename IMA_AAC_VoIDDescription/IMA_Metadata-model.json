@@ -1,0 +1,1781 @@
+{
+    "id": "Data_IMA_metadata.json",
+    "name": "Data_IMA_metadata.json",
+    "description": null,
+    "sourceColumns": [
+        {
+            "id": "HN93",
+            "hNodeId": "HN93",
+            "columnName": "Subject"
+        },
+        {
+            "id": "HN31",
+            "hNodeId": "HN31",
+            "columnName": "Publisher"
+        },
+        {
+            "id": "HN56",
+            "hNodeId": "HN56",
+            "columnName": "Modified"
+        },
+        {
+            "id": "HN11",
+            "hNodeId": "HN11",
+            "columnName": "Entities"
+        },
+        {
+            "id": "HN33",
+            "hNodeId": "HN33",
+            "columnName": "License"
+        },
+        {
+            "id": "HN58",
+            "hNodeId": "HN58",
+            "columnName": "Classes"
+        },
+        {
+            "id": "HN13",
+            "hNodeId": "HN13",
+            "columnName": "DatasetDescriptionTitle"
+        },
+        {
+            "id": "HN35",
+            "hNodeId": "HN35",
+            "columnName": "Created"
+        },
+        {
+            "id": "HN15",
+            "hNodeId": "HN15",
+            "columnName": "Homepage"
+        },
+        {
+            "id": "HN17",
+            "hNodeId": "HN17",
+            "columnName": "Triples"
+        },
+        {
+            "id": "HN19",
+            "hNodeId": "HN19",
+            "columnName": "Description"
+        },
+        {
+            "id": "HN83",
+            "hNodeId": "HN83",
+            "columnName": "Issued"
+        },
+        {
+            "id": "HN60",
+            "hNodeId": "HN60",
+            "columnName": "Dataset_URI"
+        },
+        {
+            "id": "HN41",
+            "hNodeId": "HN41",
+            "columnName": "values"
+        },
+        {
+            "id": "HN85",
+            "hNodeId": "HN85",
+            "columnName": "Sparql_endpoint"
+        },
+        {
+            "id": "HN62",
+            "hNodeId": "HN62",
+            "columnName": "URI_pattern"
+        },
+        {
+            "id": "HN21",
+            "hNodeId": "HN21",
+            "columnName": "Title"
+        },
+        {
+            "id": "HN87",
+            "hNodeId": "HN87",
+            "columnName": "DatasetDescriptionCreator"
+        },
+        {
+            "id": "HN64",
+            "hNodeId": "HN64",
+            "columnName": "Creator"
+        },
+        {
+            "id": "HN23",
+            "hNodeId": "HN23",
+            "columnName": "RDF_data_dump"
+        },
+        {
+            "id": "HN89",
+            "hNodeId": "HN89",
+            "columnName": "Contributor"
+        },
+        {
+            "id": "HN25",
+            "hNodeId": "HN25",
+            "columnName": "Example_resource"
+        },
+        {
+            "id": "HN27",
+            "hNodeId": "HN27",
+            "columnName": "Date"
+        },
+        {
+            "id": "HN29",
+            "hNodeId": "HN29",
+            "columnName": "Properties"
+        },
+        {
+            "id": "HN9",
+            "hNodeId": "HN9",
+            "columnName": "Technical_feature"
+        },
+        {
+            "id": "HN70",
+            "hNodeId": "HN70",
+            "columnName": "values"
+        },
+        {
+            "id": "HN91",
+            "hNodeId": "HN91",
+            "columnName": "DatasetDescription"
+        }
+    ],
+    "mappingToSourceColumns": [
+        {
+            "id": "HN93",
+            "sourceColumnId": "HN93"
+        },
+        {
+            "id": "HN31",
+            "sourceColumnId": "HN31"
+        },
+        {
+            "id": "HN56",
+            "sourceColumnId": "HN56"
+        },
+        {
+            "id": "HN11",
+            "sourceColumnId": "HN11"
+        },
+        {
+            "id": "HN33",
+            "sourceColumnId": "HN33"
+        },
+        {
+            "id": "HN58",
+            "sourceColumnId": "HN58"
+        },
+        {
+            "id": "HN13",
+            "sourceColumnId": "HN13"
+        },
+        {
+            "id": "HN35",
+            "sourceColumnId": "HN35"
+        },
+        {
+            "id": "HN15",
+            "sourceColumnId": "HN15"
+        },
+        {
+            "id": "HN17",
+            "sourceColumnId": "HN17"
+        },
+        {
+            "id": "HN19",
+            "sourceColumnId": "HN19"
+        },
+        {
+            "id": "HN83",
+            "sourceColumnId": "HN83"
+        },
+        {
+            "id": "HN60",
+            "sourceColumnId": "HN60"
+        },
+        {
+            "id": "HN41",
+            "sourceColumnId": "HN41"
+        },
+        {
+            "id": "HN85",
+            "sourceColumnId": "HN85"
+        },
+        {
+            "id": "HN62",
+            "sourceColumnId": "HN62"
+        },
+        {
+            "id": "HN21",
+            "sourceColumnId": "HN21"
+        },
+        {
+            "id": "HN87",
+            "sourceColumnId": "HN87"
+        },
+        {
+            "id": "HN64",
+            "sourceColumnId": "HN64"
+        },
+        {
+            "id": "HN23",
+            "sourceColumnId": "HN23"
+        },
+        {
+            "id": "HN89",
+            "sourceColumnId": "HN89"
+        },
+        {
+            "id": "HN25",
+            "sourceColumnId": "HN25"
+        },
+        {
+            "id": "HN27",
+            "sourceColumnId": "HN27"
+        },
+        {
+            "id": "HN29",
+            "sourceColumnId": "HN29"
+        },
+        {
+            "id": "HN9",
+            "sourceColumnId": "HN9"
+        },
+        {
+            "id": "HN70",
+            "sourceColumnId": "HN70"
+        },
+        {
+            "id": "HN91",
+            "sourceColumnId": "HN91"
+        }
+    ],
+    "graph": {
+        "nodes": [
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#Dataset",
+                    "rdfsLabel": null
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "http://xmlns.com/foaf/0.1/Document1",
+                "label": {
+                    "uri": "http://xmlns.com/foaf/0.1/Document",
+                    "rdfsLabel": null
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#DatasetDescription1",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                    "rdfsLabel": null
+                },
+                "type": "InternalNode",
+                "modelIds": null
+            },
+            {
+                "id": "HN93",
+                "label": {
+                    "uri": "HN93",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN93",
+                "columnName": "Subject",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN93",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/subject",
+                            "rdfsLabel": "Subject"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN93",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/subject",
+                            "rdfsLabel": "Subject"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN31",
+                "label": {
+                    "uri": "HN31",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN31",
+                "columnName": "Publisher",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN31",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/publisher",
+                            "rdfsLabel": "Publisher"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN31",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/publisher",
+                            "rdfsLabel": "Publisher"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN56",
+                "label": {
+                    "uri": "HN56",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN56",
+                "columnName": "Modified",
+                "rdfLiteralType": {
+                    "uri": "http://www.w3.org/2001/XMLSchema#date",
+                    "rdfsLabel": null
+                },
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN56",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/modified",
+                            "rdfsLabel": "Date Modified"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN56",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/modified",
+                            "rdfsLabel": "Date Modified"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN11",
+                "label": {
+                    "uri": "HN11",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN11",
+                "columnName": "Entities",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN11",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#entities",
+                            "rdfsLabel": "number of entities"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN11",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#entities",
+                            "rdfsLabel": "number of entities"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN33",
+                "label": {
+                    "uri": "HN33",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN33",
+                "columnName": "License",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN33",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/license",
+                            "rdfsLabel": "License"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN33",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/license",
+                            "rdfsLabel": "License"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN58",
+                "label": {
+                    "uri": "HN58",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN58",
+                "columnName": "Classes",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN58",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#classes",
+                            "rdfsLabel": "classes"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN58",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#classes",
+                            "rdfsLabel": "classes"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN13",
+                "label": {
+                    "uri": "HN13",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN13",
+                "columnName": "DatasetDescriptionTitle",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN13",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/title",
+                            "rdfsLabel": "Title"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN13",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/title",
+                            "rdfsLabel": "Title"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN35",
+                "label": {
+                    "uri": "HN35",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN35",
+                "columnName": "Created",
+                "rdfLiteralType": {
+                    "uri": "http://www.w3.org/2001/XMLSchema#date",
+                    "rdfsLabel": null
+                },
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN35",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/created",
+                            "rdfsLabel": "Date Created"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN35",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/created",
+                            "rdfsLabel": "Date Created"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN15",
+                "label": {
+                    "uri": "HN15",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN15",
+                "columnName": "Homepage",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN15",
+                        "domain": {
+                            "uri": "http://xmlns.com/foaf/0.1/Document",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN15",
+                        "domain": {
+                            "uri": "http://xmlns.com/foaf/0.1/Document",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN17",
+                "label": {
+                    "uri": "HN17",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN17",
+                "columnName": "Triples",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN17",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#triples",
+                            "rdfsLabel": "number of triples"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN17",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#triples",
+                            "rdfsLabel": "number of triples"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN19",
+                "label": {
+                    "uri": "HN19",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN19",
+                "columnName": "Description",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN19",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/description",
+                            "rdfsLabel": "Description"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN19",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/description",
+                            "rdfsLabel": "Description"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN83",
+                "label": {
+                    "uri": "HN83",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN83",
+                "columnName": "Issued",
+                "rdfLiteralType": {
+                    "uri": "http://www.w3.org/2001/XMLSchema#date",
+                    "rdfsLabel": null
+                },
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN83",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/issued",
+                            "rdfsLabel": "Date Issued"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN83",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/issued",
+                            "rdfsLabel": "Date Issued"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN60",
+                "label": {
+                    "uri": "HN60",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN60",
+                "columnName": "Dataset_URI",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN60",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN60",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN41",
+                "label": {
+                    "uri": "HN41",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN41",
+                "columnName": "values",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN41",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#vocabulary",
+                            "rdfsLabel": "vocabulary"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN41",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#vocabulary",
+                            "rdfsLabel": "vocabulary"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN85",
+                "label": {
+                    "uri": "HN85",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN85",
+                "columnName": "Sparql_endpoint",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN85",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#sparqlEndpoint",
+                            "rdfsLabel": "has a SPARQL endpoint at"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN85",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#sparqlEndpoint",
+                            "rdfsLabel": "has a SPARQL endpoint at"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN62",
+                "label": {
+                    "uri": "HN62",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN62",
+                "columnName": "URI_pattern",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#uriSpace",
+                            "rdfsLabel": "URI space"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN62",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#uriSpace",
+                            "rdfsLabel": "URI space"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN21",
+                "label": {
+                    "uri": "HN21",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN21",
+                "columnName": "Title",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN21",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/title",
+                            "rdfsLabel": "Title"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN21",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/title",
+                            "rdfsLabel": "Title"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN87",
+                "label": {
+                    "uri": "HN87",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN87",
+                "columnName": "DatasetDescriptionCreator",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN87",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/creator",
+                            "rdfsLabel": "Creator"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN87",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/creator",
+                            "rdfsLabel": "Creator"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN64",
+                "label": {
+                    "uri": "HN64",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN64",
+                "columnName": "Creator",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN64",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/creator",
+                            "rdfsLabel": "Creator"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN64",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/creator",
+                            "rdfsLabel": "Creator"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN23",
+                "label": {
+                    "uri": "HN23",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN23",
+                "columnName": "RDF_data_dump",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN23",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#dataDump",
+                            "rdfsLabel": "Data Dump"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN23",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#dataDump",
+                            "rdfsLabel": "Data Dump"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN89",
+                "label": {
+                    "uri": "HN89",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN89",
+                "columnName": "Contributor",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN89",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/contributor",
+                            "rdfsLabel": "Contributor"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN89",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/contributor",
+                            "rdfsLabel": "Contributor"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN25",
+                "label": {
+                    "uri": "HN25",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN25",
+                "columnName": "Example_resource",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN25",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#exampleResource",
+                            "rdfsLabel": "example resource of dataset"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN25",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#exampleResource",
+                            "rdfsLabel": "example resource of dataset"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN27",
+                "label": {
+                    "uri": "HN27",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN27",
+                "columnName": "Date",
+                "rdfLiteralType": {
+                    "uri": "http://www.w3.org/2001/XMLSchema#date",
+                    "rdfsLabel": null
+                },
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN27",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/date",
+                            "rdfsLabel": "Date"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN27",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/date",
+                            "rdfsLabel": "Date"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN29",
+                "label": {
+                    "uri": "HN29",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN29",
+                "columnName": "Properties",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN29",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#properties",
+                            "rdfsLabel": "number of properties"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN29",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#properties",
+                            "rdfsLabel": "number of properties"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN9",
+                "label": {
+                    "uri": "HN9",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN9",
+                "columnName": "Technical_feature",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN9",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#feature",
+                            "rdfsLabel": "feature"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN9",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://rdfs.org/ns/void#feature",
+                            "rdfsLabel": "feature"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN70",
+                "label": {
+                    "uri": "HN70",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN70",
+                "columnName": "values",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN70",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/source",
+                            "rdfsLabel": "Source"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN70",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#Dataset",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://purl.org/dc/terms/source",
+                            "rdfsLabel": "Source"
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            },
+            {
+                "id": "HN91",
+                "label": {
+                    "uri": "HN91",
+                    "rdfsLabel": null
+                },
+                "type": "ColumnNode",
+                "hNodeId": "HN91",
+                "columnName": "DatasetDescription",
+                "rdfLiteralType": null,
+                "language": "",
+                "userSemanticTypes": [
+                    {
+                        "hNodeId": "HN91",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    },
+                    {
+                        "hNodeId": "HN91",
+                        "domain": {
+                            "uri": "http://rdfs.org/ns/void#DatasetDescription",
+                            "rdfsLabel": null
+                        },
+                        "type": {
+                            "uri": "http://isi.edu/integration/karma/dev#classLink",
+                            "rdfsLabel": null
+                        },
+                        "origin": "User",
+                        "confidenceScore": 1.0
+                    }
+                ],
+                "learnedSemanticTypes": null,
+                "modelIds": null
+            }
+        ],
+        "links": [
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://xmlns.com/foaf/0.1/homepage---http://xmlns.com/foaf/0.1/Document1",
+                "weight": 0.009999999776482582,
+                "type": "ObjectPropertyLink",
+                "label": {
+                    "uri": "http://xmlns.com/foaf/0.1/homepage",
+                    "rdfsLabel": null
+                },
+                "objectPropertyType": "WithOnlyRange",
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#DatasetDescription1---http://xmlns.com/foaf/0.1/primaryTopic---http://rdfs.org/ns/void#Dataset1",
+                "weight": 0.009999999776482582,
+                "type": "ObjectPropertyLink",
+                "label": {
+                    "uri": "http://xmlns.com/foaf/0.1/primaryTopic",
+                    "rdfsLabel": null
+                },
+                "objectPropertyType": "WithOnlyDomain",
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/subject---HN93",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/subject",
+                    "rdfsLabel": "Subject"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/publisher---HN31",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/publisher",
+                    "rdfsLabel": "Publisher"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/modified---HN56",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/modified",
+                    "rdfsLabel": "Date Modified"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#entities---HN11",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#entities",
+                    "rdfsLabel": "number of entities"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/license---HN33",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/license",
+                    "rdfsLabel": "License"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#classes---HN58",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#classes",
+                    "rdfsLabel": "classes"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#DatasetDescription1---http://purl.org/dc/terms/title---HN13",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/title",
+                    "rdfsLabel": "Title"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/created---HN35",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/created",
+                    "rdfsLabel": "Date Created"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://xmlns.com/foaf/0.1/Document1---http://isi.edu/integration/karma/dev#classLink---HN15",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#triples---HN17",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#triples",
+                    "rdfsLabel": "number of triples"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/description---HN19",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/description",
+                    "rdfsLabel": "Description"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/issued---HN83",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/issued",
+                    "rdfsLabel": "Date Issued"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://isi.edu/integration/karma/dev#classLink---HN60",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#vocabulary---HN41",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#vocabulary",
+                    "rdfsLabel": "vocabulary"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#sparqlEndpoint---HN85",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#sparqlEndpoint",
+                    "rdfsLabel": "has a SPARQL endpoint at"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#uriSpace---HN62",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#uriSpace",
+                    "rdfsLabel": "URI space"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/title---HN21",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/title",
+                    "rdfsLabel": "Title"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#DatasetDescription1---http://purl.org/dc/terms/creator---HN87",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/creator",
+                    "rdfsLabel": "Creator"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/creator---HN64",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/creator",
+                    "rdfsLabel": "Creator"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#dataDump---HN23",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#dataDump",
+                    "rdfsLabel": "Data Dump"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/contributor---HN89",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/contributor",
+                    "rdfsLabel": "Contributor"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#exampleResource---HN25",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#exampleResource",
+                    "rdfsLabel": "example resource of dataset"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/date---HN27",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/date",
+                    "rdfsLabel": "Date"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#properties---HN29",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#properties",
+                    "rdfsLabel": "number of properties"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://rdfs.org/ns/void#feature---HN9",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://rdfs.org/ns/void#feature",
+                    "rdfsLabel": "feature"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#Dataset1---http://purl.org/dc/terms/source---HN70",
+                "weight": 0.01,
+                "type": "DataPropertyLink",
+                "label": {
+                    "uri": "http://purl.org/dc/terms/source",
+                    "rdfsLabel": "Source"
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "None",
+                "modelIds": null
+            },
+            {
+                "id": "http://rdfs.org/ns/void#DatasetDescription1---http://isi.edu/integration/karma/dev#classLink---HN91",
+                "weight": 0.01,
+                "type": "ClassInstanceLink",
+                "label": {
+                    "uri": "http://isi.edu/integration/karma/dev#classLink",
+                    "rdfsLabel": null
+                },
+                "status": "ForcedByUser",
+                "keyInfo": "UriOfInstance",
+                "modelIds": null
+            }
+        ]
+    }
+}
