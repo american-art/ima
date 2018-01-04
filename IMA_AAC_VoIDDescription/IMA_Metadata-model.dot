@@ -1,0 +1,67 @@
+digraph n0 {
+fontcolor="blue"
+remincross="true"
+label="Data_IMA_metadata.json"
+subgraph cluster {
+label="model"
+n2[style="filled",color="white",fillcolor="lightgray",label="Dataset1"];
+n3[style="filled",color="white",fillcolor="lightgray",label="Document1"];
+n4[style="filled",color="white",fillcolor="lightgray",label="DatasetDescription1"];
+n5[shape="plaintext",style="filled",fillcolor="gold",label="Subject"];
+n6[shape="plaintext",style="filled",fillcolor="gold",label="Publisher"];
+n7[shape="plaintext",style="filled",fillcolor="gold",label="Modified"];
+n8[shape="plaintext",style="filled",fillcolor="gold",label="Entities"];
+n9[shape="plaintext",style="filled",fillcolor="gold",label="License"];
+n10[shape="plaintext",style="filled",fillcolor="gold",label="Classes"];
+n11[shape="plaintext",style="filled",fillcolor="gold",label="DatasetDescriptionTitle"];
+n12[shape="plaintext",style="filled",fillcolor="gold",label="Created"];
+n13[shape="plaintext",style="filled",fillcolor="gold",label="Homepage"];
+n14[shape="plaintext",style="filled",fillcolor="gold",label="Triples"];
+n15[shape="plaintext",style="filled",fillcolor="gold",label="Description"];
+n16[shape="plaintext",style="filled",fillcolor="gold",label="Issued"];
+n17[shape="plaintext",style="filled",fillcolor="gold",label="Dataset_URI"];
+n18[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n19[shape="plaintext",style="filled",fillcolor="gold",label="Sparql_endpoint"];
+n20[shape="plaintext",style="filled",fillcolor="gold",label="URI_pattern"];
+n21[shape="plaintext",style="filled",fillcolor="gold",label="Title"];
+n22[shape="plaintext",style="filled",fillcolor="gold",label="DatasetDescriptionCreator"];
+n23[shape="plaintext",style="filled",fillcolor="gold",label="Creator"];
+n24[shape="plaintext",style="filled",fillcolor="gold",label="RDF_data_dump"];
+n25[shape="plaintext",style="filled",fillcolor="gold",label="Contributor"];
+n26[shape="plaintext",style="filled",fillcolor="gold",label="Example_resource"];
+n27[shape="plaintext",style="filled",fillcolor="gold",label="Date"];
+n28[shape="plaintext",style="filled",fillcolor="gold",label="Properties"];
+n29[shape="plaintext",style="filled",fillcolor="gold",label="Technical_feature"];
+n30[shape="plaintext",style="filled",fillcolor="gold",label="values"];
+n31[shape="plaintext",style="filled",fillcolor="gold",label="DatasetDescription"];
+}
+n2 -> n3[color="brown",fontcolor="black",label="homepage"]
+n4 -> n2[color="brown",fontcolor="black",label="primaryTopic"]
+n2 -> n5[color="brown",fontcolor="black",label="subject"]
+n2 -> n6[color="brown",fontcolor="black",label="publisher"]
+n2 -> n7[color="brown",fontcolor="black",label="modified"]
+n2 -> n8[color="brown",fontcolor="black",label="entities"]
+n2 -> n9[color="brown",fontcolor="black",label="license"]
+n2 -> n10[color="brown",fontcolor="black",label="classes"]
+n4 -> n11[color="brown",fontcolor="black",label="title"]
+n2 -> n12[color="brown",fontcolor="black",label="created"]
+n3 -> n13[color="brown",fontcolor="black",label="classLink"]
+n2 -> n14[color="brown",fontcolor="black",label="triples"]
+n2 -> n15[color="brown",fontcolor="black",label="description"]
+n2 -> n16[color="brown",fontcolor="black",label="issued"]
+n2 -> n17[color="brown",fontcolor="black",label="classLink"]
+n2 -> n18[color="brown",fontcolor="black",label="vocabulary"]
+n2 -> n19[color="brown",fontcolor="black",label="sparqlEndpoint"]
+n2 -> n20[color="brown",fontcolor="black",label="uriSpace"]
+n2 -> n21[color="brown",fontcolor="black",label="title"]
+n4 -> n22[color="brown",fontcolor="black",label="creator"]
+n2 -> n23[color="brown",fontcolor="black",label="creator"]
+n2 -> n24[color="brown",fontcolor="black",label="dataDump"]
+n2 -> n25[color="brown",fontcolor="black",label="contributor"]
+n2 -> n26[color="brown",fontcolor="black",label="exampleResource"]
+n2 -> n27[color="brown",fontcolor="black",label="date"]
+n2 -> n28[color="brown",fontcolor="black",label="properties"]
+n2 -> n29[color="brown",fontcolor="black",label="feature"]
+n2 -> n30[color="brown",fontcolor="black",label="source"]
+n4 -> n31[color="brown",fontcolor="black",label="classLink"]
+}
