@@ -1,0 +1,2459 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1c311lgp3x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "Data_IMA_metadata.json" ;
+	km-dev:modelPublicationTime "1515085021987"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Subject\"}],[{\"columnName\":\"Publisher\"}],[{\"columnName\":\"Modified\"}],[{\"columnName\":\"License\"}],[{\"columnName\":\"Entities\"}],[{\"columnName\":\"Classes\"}],[{\"columnName\":\"Created\"}],[{\"columnName\":\"DatasetDescriptionTitle\"}],[{\"columnName\":\"Homepage\"}],[{\"columnName\":\"Triples\"}],[{\"columnName\":\"Description\"}],[{\"columnName\":\"Issued\"}],[{\"columnName\":\"Dataset_URI\"}],[{\"columnName\":\"Sparql_endpoint\"}],[{\"columnName\":\"Vocabularies\"},{\"columnName\":\"values\"}],[{\"columnName\":\"URI_pattern\"}],[{\"columnName\":\"Title\"}],[{\"columnName\":\"DatasetDescriptionCreator\"}],[{\"columnName\":\"Creator\"}],[{\"columnName\":\"Contributor\"}],[{\"columnName\":\"RDF_data_dump\"}],[{\"columnName\":\"Example_resource\"}],[{\"columnName\":\"Date\"}],[{\"columnName\":\"Properties\"}],[{\"columnName\":\"Technical_feature\"}],[{\"columnName\":\"Source\"},{\"columnName\":\"values\"}],[{\"columnName\":\"DatasetDescription\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Subject\"}],[{\"columnName\":\"Publisher\"}],[{\"columnName\":\"Modified\"}],[{\"columnName\":\"License\"}],[{\"columnName\":\"Entities\"}],[{\"columnName\":\"Classes\"}],[{\"columnName\":\"Created\"}],[{\"columnName\":\"DatasetDescriptionTitle\"}],[{\"columnName\":\"Homepage\"}],[{\"columnName\":\"Triples\"}],[{\"columnName\":\"Description\"}],[{\"columnName\":\"Issued\"}],[{\"columnName\":\"Dataset_URI\"}],[{\"columnName\":\"Sparql_endpoint\"}],[{\"columnName\":\"Vocabularies\"},{\"columnName\":\"values\"}],[{\"columnName\":\"URI_pattern\"}],[{\"columnName\":\"Title\"}],[{\"columnName\":\"DatasetDescriptionCreator\"}],[{\"columnName\":\"Creator\"}],[{\"columnName\":\"Contributor\"}],[{\"columnName\":\"RDF_data_dump\"}],[{\"columnName\":\"Example_resource\"}],[{\"columnName\":\"Date\"}],[{\"columnName\":\"Properties\"}],[{\"columnName\":\"Technical_feature\"}],[{\"columnName\":\"HomepageURL\"}],[{\"columnName\":\"Source\"},{\"columnName\":\"values\"}],[{\"columnName\":\"DatasetDescription\"}]]" ;
+	km-dev:hasModelLabel "IMA_Metadata" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Homepage\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"HomepageURL\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"Homepage\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Homepage\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"HomepageURL\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"hasGithubURL\": true,
+                    \"GithubURL\": \"https://github.com/american-art/wam/tree/master/WAM_AAC_VoIDDescription\",
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"WAM_Metadata\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"IMA_Metadata\",
+                    \"hasBaseURI\": false,
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"hasGithubURL\": true,
+                    \"GithubURL\": \"https://github.com/american-art/ima/tree/master/IMA_AAC_VoIDDescription\",
+                    \"baseURI\": \"\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Dataset_URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://rdfs.org/ns/void#Dataset\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://rdfs.org/ns/void#Dataset1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Dataset_URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Dataset_URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Homepage\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Document1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Homepage\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Homepage\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Title\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/title\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Title\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Title\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Description\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/description\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Description\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Description\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Creator\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/creator\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Creator\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Creator\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Contributor\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/contributor\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Contributor\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Contributor\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Publisher\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/publisher\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Publisher\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Publisher\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Source\"},
+                    {\"columnName\": \"values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/source\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Source\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Source\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Issued\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/issued\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Issued\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Issued\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"License\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/license\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"License\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"License\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Subject\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/subject\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Subject\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Subject\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Technical_feature\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#feature\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Technical_feature\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Technical_feature\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Sparql_endpoint\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#sparqlEndpoint\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Sparql_endpoint\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Sparql_endpoint\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"RDF_data_dump\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#dataDump\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RDF_data_dump\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"RDF_data_dump\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Example_resource\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#exampleResource\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Example_resource\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Example_resource\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"URI_pattern\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#uriSpace\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"URI_pattern\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"URI_pattern\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Vocabularies\"},
+                    {\"columnName\": \"values\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#vocabulary\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vocabularies\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Vocabularies\\\"},{\\\"columnName\\\":\\\"values\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Classes\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#classes\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Classes\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Classes\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Properties\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#properties\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Properties\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Properties\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Triples\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#triples\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Triples\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Triples\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Entities\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://rdfs.org/ns/void#entities\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Entities\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Entities\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Date\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/date\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Date\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Date\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Created\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/created\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Created\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Created\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Modified\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/modified\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#Dataset/Dataset1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Modified\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Modified\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DatasetDescription\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://rdfs.org/ns/void#DatasetDescription\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://rdfs.org/ns/void#DatasetDescription1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#DatasetDescription\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#DatasetDescription1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#DatasetDescription/DatasetDescription1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DatasetDescription\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DatasetDescription\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DatasetDescriptionTitle\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#DatasetDescription\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#DatasetDescription1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/title\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#DatasetDescription/DatasetDescription1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DatasetDescriptionTitle\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DatasetDescriptionTitle\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"DatasetDescriptionCreator\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://rdfs.org/ns/void#DatasetDescription\",
+                    \"DomainId\": \"http://rdfs.org/ns/void#DatasetDescription1\",
+                    \"isPrimary\": true,
+                    \"isProvenance\": false,
+                    \"FullType\": \"http://purl.org/dc/terms/creator\",
+                    \"DomainLabel\": \"http://rdfs.org/ns/void#DatasetDescription/DatasetDescription1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"language\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DatasetDescriptionCreator\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"DatasetDescriptionCreator\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/homepage\",
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"edgeSourceId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"edgeSourceUri\": \"http://rdfs.org/ns/void#Dataset\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"AddLinkCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"edge\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"edgeTargetId\": \"http://rdfs.org/ns/void#Dataset1\",
+                    \"edgeId\": \"http://xmlns.com/foaf/0.1/primaryTopic\",
+                    \"edgeTargetUri\": \"http://rdfs.org/ns/void#Dataset\",
+                    \"edgeSourceId\": \"http://rdfs.org/ns/void#DatasetDescription1\",
+                    \"edgeSourceUri\": \"http://rdfs.org/ns/void#DatasetDescription\"
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d a rr:TriplesMap .
+
+_:node1c311lgp3x1 km-dev:hasTriplesMap km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x2 rr:tableName "Data_IMA_metadata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasLogicalTable _:node1c311lgp3x2 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:logicalTable _:node1c311lgp3x2 ;
+	rr:subjectMap _:node1c311lgp3x3 .
+
+_:node1c311lgp3x1 km-dev:hasSubjectMap _:node1c311lgp3x3 .
+
+_:node1c311lgp3x3 km-dev:isPartOfMapping _:node1c311lgp3x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://rdfs.org/ns/void#Dataset1" ;
+	rr:class <http://rdfs.org/ns/void#Dataset> ;
+	rr:template "{Dataset_URI}" .
+
+km-dev:PredicateObjectMap_e3062df0-38c5-4e37-aa29-4b1775042e7a rr:predicate foaf:homepage .
+
+km-dev:RefObjectMap_a1391f9f-4820-4658-baec-f541cee368cb a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_aecf6a61-a4c0-480c-9452-2d300b56a2df ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap km-dev:RefObjectMap_a1391f9f-4820-4658-baec-f541cee368cb .
+
+km-dev:PredicateObjectMap_e3062df0-38c5-4e37-aa29-4b1775042e7a rr:objectMap km-dev:RefObjectMap_a1391f9f-4820-4658-baec-f541cee368cb .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_e3062df0-38c5-4e37-aa29-4b1775042e7a .
+
+km-dev:PredicateObjectMap_e3062df0-38c5-4e37-aa29-4b1775042e7a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e3062df0-38c5-4e37-aa29-4b1775042e7a .
+
+km-dev:PredicateObjectMap_31900406-de3b-4248-b838-8fcefb70d68b rr:predicate dct:subject .
+
+_:node1c311lgp3x4 rr:column "Subject" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x4 .
+
+km-dev:PredicateObjectMap_31900406-de3b-4248-b838-8fcefb70d68b rr:objectMap _:node1c311lgp3x4 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_31900406-de3b-4248-b838-8fcefb70d68b .
+
+km-dev:PredicateObjectMap_31900406-de3b-4248-b838-8fcefb70d68b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_31900406-de3b-4248-b838-8fcefb70d68b .
+
+km-dev:PredicateObjectMap_55bd777b-4bfb-4bb4-872a-fe4d89c550b4 rr:predicate dct:publisher .
+
+_:node1c311lgp3x5 rr:column "Publisher" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x5 .
+
+km-dev:PredicateObjectMap_55bd777b-4bfb-4bb4-872a-fe4d89c550b4 rr:objectMap _:node1c311lgp3x5 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_55bd777b-4bfb-4bb4-872a-fe4d89c550b4 .
+
+km-dev:PredicateObjectMap_55bd777b-4bfb-4bb4-872a-fe4d89c550b4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_55bd777b-4bfb-4bb4-872a-fe4d89c550b4 .
+
+km-dev:PredicateObjectMap_d638a300-1230-4e61-8029-170054fe3907 rr:predicate dct:modified .
+
+_:node1c311lgp3x6 rr:column "Modified" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x6 .
+
+km-dev:PredicateObjectMap_d638a300-1230-4e61-8029-170054fe3907 rr:objectMap _:node1c311lgp3x6 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_d638a300-1230-4e61-8029-170054fe3907 .
+
+km-dev:PredicateObjectMap_d638a300-1230-4e61-8029-170054fe3907 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d638a300-1230-4e61-8029-170054fe3907 .
+
+km-dev:PredicateObjectMap_ae174b95-d3f8-4ea5-9e10-d46077e9065a rr:predicate <http://rdfs.org/ns/void#entities> .
+
+_:node1c311lgp3x7 rr:column "Entities" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x7 .
+
+km-dev:PredicateObjectMap_ae174b95-d3f8-4ea5-9e10-d46077e9065a rr:objectMap _:node1c311lgp3x7 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_ae174b95-d3f8-4ea5-9e10-d46077e9065a .
+
+km-dev:PredicateObjectMap_ae174b95-d3f8-4ea5-9e10-d46077e9065a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ae174b95-d3f8-4ea5-9e10-d46077e9065a .
+
+km-dev:PredicateObjectMap_77e42afd-6e1e-41b9-b37c-85a48b020de1 rr:predicate dct:license .
+
+_:node1c311lgp3x8 rr:column "License" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x8 .
+
+km-dev:PredicateObjectMap_77e42afd-6e1e-41b9-b37c-85a48b020de1 rr:objectMap _:node1c311lgp3x8 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_77e42afd-6e1e-41b9-b37c-85a48b020de1 .
+
+km-dev:PredicateObjectMap_77e42afd-6e1e-41b9-b37c-85a48b020de1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_77e42afd-6e1e-41b9-b37c-85a48b020de1 .
+
+km-dev:PredicateObjectMap_12372681-b0da-48e8-af14-7b12881043ba rr:predicate <http://rdfs.org/ns/void#classes> .
+
+_:node1c311lgp3x9 rr:column "Classes" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x9 .
+
+km-dev:PredicateObjectMap_12372681-b0da-48e8-af14-7b12881043ba rr:objectMap _:node1c311lgp3x9 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_12372681-b0da-48e8-af14-7b12881043ba .
+
+km-dev:PredicateObjectMap_12372681-b0da-48e8-af14-7b12881043ba a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_12372681-b0da-48e8-af14-7b12881043ba .
+
+km-dev:PredicateObjectMap_07c8ac5f-b1b4-4085-8266-cf87537a2a6d rr:predicate dct:created .
+
+_:node1c311lgp3x10 rr:column "Created" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x10 .
+
+km-dev:PredicateObjectMap_07c8ac5f-b1b4-4085-8266-cf87537a2a6d rr:objectMap _:node1c311lgp3x10 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_07c8ac5f-b1b4-4085-8266-cf87537a2a6d .
+
+km-dev:PredicateObjectMap_07c8ac5f-b1b4-4085-8266-cf87537a2a6d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_07c8ac5f-b1b4-4085-8266-cf87537a2a6d .
+
+km-dev:PredicateObjectMap_af57ed0c-c7dc-4b73-be94-846839ff7016 rr:predicate <http://rdfs.org/ns/void#triples> .
+
+_:node1c311lgp3x11 rr:column "Triples" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x11 .
+
+km-dev:PredicateObjectMap_af57ed0c-c7dc-4b73-be94-846839ff7016 rr:objectMap _:node1c311lgp3x11 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_af57ed0c-c7dc-4b73-be94-846839ff7016 .
+
+km-dev:PredicateObjectMap_af57ed0c-c7dc-4b73-be94-846839ff7016 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_af57ed0c-c7dc-4b73-be94-846839ff7016 .
+
+km-dev:PredicateObjectMap_d8da8a0f-ddf2-4eae-a494-8717c31d978e rr:predicate dct:description .
+
+_:node1c311lgp3x12 rr:column "Description" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x12 .
+
+km-dev:PredicateObjectMap_d8da8a0f-ddf2-4eae-a494-8717c31d978e rr:objectMap _:node1c311lgp3x12 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_d8da8a0f-ddf2-4eae-a494-8717c31d978e .
+
+km-dev:PredicateObjectMap_d8da8a0f-ddf2-4eae-a494-8717c31d978e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d8da8a0f-ddf2-4eae-a494-8717c31d978e .
+
+km-dev:PredicateObjectMap_d78a2dba-8a2b-462a-ae0a-f3409d5bd7fe rr:predicate dct:issued .
+
+_:node1c311lgp3x13 rr:column "Issued" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x13 .
+
+km-dev:PredicateObjectMap_d78a2dba-8a2b-462a-ae0a-f3409d5bd7fe rr:objectMap _:node1c311lgp3x13 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_d78a2dba-8a2b-462a-ae0a-f3409d5bd7fe .
+
+km-dev:PredicateObjectMap_d78a2dba-8a2b-462a-ae0a-f3409d5bd7fe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d78a2dba-8a2b-462a-ae0a-f3409d5bd7fe .
+
+km-dev:PredicateObjectMap_d4b0919c-8ef6-4b82-89e0-9f77094d63b9 rr:predicate <http://rdfs.org/ns/void#vocabulary> .
+
+_:node1c311lgp3x14 rr:column "[\"Vocabularies\",\"values\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x14 .
+
+km-dev:PredicateObjectMap_d4b0919c-8ef6-4b82-89e0-9f77094d63b9 rr:objectMap _:node1c311lgp3x14 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_d4b0919c-8ef6-4b82-89e0-9f77094d63b9 .
+
+km-dev:PredicateObjectMap_d4b0919c-8ef6-4b82-89e0-9f77094d63b9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d4b0919c-8ef6-4b82-89e0-9f77094d63b9 .
+
+km-dev:PredicateObjectMap_6d13eaec-f605-468a-9861-65215d19a100 rr:predicate <http://rdfs.org/ns/void#sparqlEndpoint> .
+
+_:node1c311lgp3x15 rr:column "Sparql_endpoint" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x15 .
+
+km-dev:PredicateObjectMap_6d13eaec-f605-468a-9861-65215d19a100 rr:objectMap _:node1c311lgp3x15 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_6d13eaec-f605-468a-9861-65215d19a100 .
+
+km-dev:PredicateObjectMap_6d13eaec-f605-468a-9861-65215d19a100 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6d13eaec-f605-468a-9861-65215d19a100 .
+
+km-dev:PredicateObjectMap_683c8d8e-c772-489b-8ab2-806cf2beeafa rr:predicate <http://rdfs.org/ns/void#uriSpace> .
+
+_:node1c311lgp3x16 rr:column "URI_pattern" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x16 .
+
+km-dev:PredicateObjectMap_683c8d8e-c772-489b-8ab2-806cf2beeafa rr:objectMap _:node1c311lgp3x16 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_683c8d8e-c772-489b-8ab2-806cf2beeafa .
+
+km-dev:PredicateObjectMap_683c8d8e-c772-489b-8ab2-806cf2beeafa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_683c8d8e-c772-489b-8ab2-806cf2beeafa .
+
+km-dev:PredicateObjectMap_ec09d0e4-15f2-4641-816c-4db8c2abb0e6 rr:predicate dct:title .
+
+_:node1c311lgp3x17 rr:column "Title" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x17 .
+
+km-dev:PredicateObjectMap_ec09d0e4-15f2-4641-816c-4db8c2abb0e6 rr:objectMap _:node1c311lgp3x17 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_ec09d0e4-15f2-4641-816c-4db8c2abb0e6 .
+
+km-dev:PredicateObjectMap_ec09d0e4-15f2-4641-816c-4db8c2abb0e6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ec09d0e4-15f2-4641-816c-4db8c2abb0e6 .
+
+km-dev:PredicateObjectMap_117b61cf-f4f7-4a6e-90c6-859e7cab002f rr:predicate dct:creator .
+
+_:node1c311lgp3x18 rr:column "Creator" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x18 .
+
+km-dev:PredicateObjectMap_117b61cf-f4f7-4a6e-90c6-859e7cab002f rr:objectMap _:node1c311lgp3x18 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_117b61cf-f4f7-4a6e-90c6-859e7cab002f .
+
+km-dev:PredicateObjectMap_117b61cf-f4f7-4a6e-90c6-859e7cab002f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_117b61cf-f4f7-4a6e-90c6-859e7cab002f .
+
+km-dev:PredicateObjectMap_d18836bf-a057-4748-9338-c30f7e55391c rr:predicate <http://rdfs.org/ns/void#dataDump> .
+
+_:node1c311lgp3x19 rr:column "RDF_data_dump" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x19 .
+
+km-dev:PredicateObjectMap_d18836bf-a057-4748-9338-c30f7e55391c rr:objectMap _:node1c311lgp3x19 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_d18836bf-a057-4748-9338-c30f7e55391c .
+
+km-dev:PredicateObjectMap_d18836bf-a057-4748-9338-c30f7e55391c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d18836bf-a057-4748-9338-c30f7e55391c .
+
+km-dev:PredicateObjectMap_db30c051-ee52-4d2b-8dd4-ae9640fc7e95 rr:predicate dct:contributor .
+
+_:node1c311lgp3x20 rr:column "Contributor" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x20 .
+
+km-dev:PredicateObjectMap_db30c051-ee52-4d2b-8dd4-ae9640fc7e95 rr:objectMap _:node1c311lgp3x20 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_db30c051-ee52-4d2b-8dd4-ae9640fc7e95 .
+
+km-dev:PredicateObjectMap_db30c051-ee52-4d2b-8dd4-ae9640fc7e95 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_db30c051-ee52-4d2b-8dd4-ae9640fc7e95 .
+
+km-dev:PredicateObjectMap_f5401a0a-efbe-47ab-966b-7887cadd72a1 rr:predicate <http://rdfs.org/ns/void#exampleResource> .
+
+_:node1c311lgp3x21 rr:column "Example_resource" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x21 .
+
+km-dev:PredicateObjectMap_f5401a0a-efbe-47ab-966b-7887cadd72a1 rr:objectMap _:node1c311lgp3x21 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_f5401a0a-efbe-47ab-966b-7887cadd72a1 .
+
+km-dev:PredicateObjectMap_f5401a0a-efbe-47ab-966b-7887cadd72a1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f5401a0a-efbe-47ab-966b-7887cadd72a1 .
+
+km-dev:PredicateObjectMap_bae4eeff-aa38-4f1c-9f7a-4f1a7bbc72b7 rr:predicate dct:date .
+
+_:node1c311lgp3x22 rr:column "Date" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x22 .
+
+km-dev:PredicateObjectMap_bae4eeff-aa38-4f1c-9f7a-4f1a7bbc72b7 rr:objectMap _:node1c311lgp3x22 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_bae4eeff-aa38-4f1c-9f7a-4f1a7bbc72b7 .
+
+km-dev:PredicateObjectMap_bae4eeff-aa38-4f1c-9f7a-4f1a7bbc72b7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bae4eeff-aa38-4f1c-9f7a-4f1a7bbc72b7 .
+
+km-dev:PredicateObjectMap_aa0ed353-34eb-4688-bc51-13df70d52ef1 rr:predicate <http://rdfs.org/ns/void#properties> .
+
+_:node1c311lgp3x23 rr:column "Properties" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x23 .
+
+km-dev:PredicateObjectMap_aa0ed353-34eb-4688-bc51-13df70d52ef1 rr:objectMap _:node1c311lgp3x23 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_aa0ed353-34eb-4688-bc51-13df70d52ef1 .
+
+km-dev:PredicateObjectMap_aa0ed353-34eb-4688-bc51-13df70d52ef1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aa0ed353-34eb-4688-bc51-13df70d52ef1 .
+
+km-dev:PredicateObjectMap_586c5331-93ff-4401-bbc8-fe0b2cd76a54 rr:predicate <http://rdfs.org/ns/void#feature> .
+
+_:node1c311lgp3x24 rr:column "Technical_feature" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x24 .
+
+km-dev:PredicateObjectMap_586c5331-93ff-4401-bbc8-fe0b2cd76a54 rr:objectMap _:node1c311lgp3x24 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_586c5331-93ff-4401-bbc8-fe0b2cd76a54 .
+
+km-dev:PredicateObjectMap_586c5331-93ff-4401-bbc8-fe0b2cd76a54 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_586c5331-93ff-4401-bbc8-fe0b2cd76a54 .
+
+km-dev:PredicateObjectMap_9b152b8f-363a-48b9-a985-257fed352b60 rr:predicate dct:source .
+
+_:node1c311lgp3x25 rr:column "[\"Source\",\"values\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x25 .
+
+km-dev:PredicateObjectMap_9b152b8f-363a-48b9-a985-257fed352b60 rr:objectMap _:node1c311lgp3x25 .
+
+km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d rr:predicateObjectMap km-dev:PredicateObjectMap_9b152b8f-363a-48b9-a985-257fed352b60 .
+
+km-dev:PredicateObjectMap_9b152b8f-363a-48b9-a985-257fed352b60 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9b152b8f-363a-48b9-a985-257fed352b60 .
+
+km-dev:TriplesMap_aecf6a61-a4c0-480c-9452-2d300b56a2df a rr:TriplesMap .
+
+_:node1c311lgp3x1 km-dev:hasTriplesMap km-dev:TriplesMap_aecf6a61-a4c0-480c-9452-2d300b56a2df .
+
+km-dev:TriplesMap_aecf6a61-a4c0-480c-9452-2d300b56a2df km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x26 rr:tableName "Data_IMA_metadata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasLogicalTable _:node1c311lgp3x26 .
+
+km-dev:TriplesMap_aecf6a61-a4c0-480c-9452-2d300b56a2df rr:logicalTable _:node1c311lgp3x26 ;
+	rr:subjectMap _:node1c311lgp3x27 .
+
+_:node1c311lgp3x1 km-dev:hasSubjectMap _:node1c311lgp3x27 .
+
+_:node1c311lgp3x27 km-dev:isPartOfMapping _:node1c311lgp3x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Document1" ;
+	rr:class foaf:Document ;
+	rr:template "{Homepage}" .
+
+km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 a rr:TriplesMap .
+
+_:node1c311lgp3x1 km-dev:hasTriplesMap km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 .
+
+km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x28 rr:tableName "Data_IMA_metadata.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasLogicalTable _:node1c311lgp3x28 .
+
+km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 rr:logicalTable _:node1c311lgp3x28 ;
+	rr:subjectMap _:node1c311lgp3x29 .
+
+_:node1c311lgp3x1 km-dev:hasSubjectMap _:node1c311lgp3x29 .
+
+_:node1c311lgp3x29 km-dev:isPartOfMapping _:node1c311lgp3x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://rdfs.org/ns/void#DatasetDescription1" ;
+	rr:class <http://rdfs.org/ns/void#DatasetDescription> ;
+	rr:template "{DatasetDescription}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_3195b471-8a06-4adc-aaf1-2da3e01b8159 rr:predicate foaf:primaryTopic .
+
+km-dev:RefObjectMap_d63e4353-6f42-4576-9e0b-83e9fe4054de a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4b153a2a-0615-4935-a40e-8f188526ea6d ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap km-dev:RefObjectMap_d63e4353-6f42-4576-9e0b-83e9fe4054de .
+
+km-dev:PredicateObjectMap_3195b471-8a06-4adc-aaf1-2da3e01b8159 rr:objectMap km-dev:RefObjectMap_d63e4353-6f42-4576-9e0b-83e9fe4054de .
+
+km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 rr:predicateObjectMap km-dev:PredicateObjectMap_3195b471-8a06-4adc-aaf1-2da3e01b8159 .
+
+km-dev:PredicateObjectMap_3195b471-8a06-4adc-aaf1-2da3e01b8159 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3195b471-8a06-4adc-aaf1-2da3e01b8159 .
+
+km-dev:PredicateObjectMap_d8a464ce-f465-4ffe-bb9a-9b41305991dc rr:predicate dct:title .
+
+_:node1c311lgp3x30 rr:column "DatasetDescriptionTitle" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x30 .
+
+km-dev:PredicateObjectMap_d8a464ce-f465-4ffe-bb9a-9b41305991dc rr:objectMap _:node1c311lgp3x30 .
+
+km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 rr:predicateObjectMap km-dev:PredicateObjectMap_d8a464ce-f465-4ffe-bb9a-9b41305991dc .
+
+km-dev:PredicateObjectMap_d8a464ce-f465-4ffe-bb9a-9b41305991dc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d8a464ce-f465-4ffe-bb9a-9b41305991dc .
+
+km-dev:PredicateObjectMap_4bb6ae26-02ff-414b-80a0-ddaa41b817b9 rr:predicate dct:creator .
+
+_:node1c311lgp3x31 rr:column "DatasetDescriptionCreator" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasObjectMap _:node1c311lgp3x31 .
+
+km-dev:PredicateObjectMap_4bb6ae26-02ff-414b-80a0-ddaa41b817b9 rr:objectMap _:node1c311lgp3x31 .
+
+km-dev:TriplesMap_2a8012a3-acbe-49a2-a5f0-83f8324eda97 rr:predicateObjectMap km-dev:PredicateObjectMap_4bb6ae26-02ff-414b-80a0-ddaa41b817b9 .
+
+km-dev:PredicateObjectMap_4bb6ae26-02ff-414b-80a0-ddaa41b817b9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1c311lgp3x1 .
+
+_:node1c311lgp3x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4bb6ae26-02ff-414b-80a0-ddaa41b817b9 .
