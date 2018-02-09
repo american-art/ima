@@ -1,4 +1,4 @@
-# IMA-Objects-Data.csv
+# IMA-SampleObjects-Data-for-AAC.csv
 
 ## Add Column
 #### _OwnerURI_
@@ -242,6 +242,18 @@ return "thesauri/curatorialdepartment"
 From column: _CollectionURI_
 ``` python
 return "Indianapolis Museum of Art Curatorial Department"
+```
+
+#### _OwnerURI_
+From column: _OwnerURI_
+``` python
+return "http://data.imamuseum.org/"
+```
+
+#### _OwnerLabel_
+From column: _OwnerLabel_
+``` python
+return "Indianapolis Museum of Art at Newfields"
 ```
 
 
